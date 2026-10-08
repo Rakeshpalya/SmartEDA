@@ -1,0 +1,1201 @@
+student_id,gender,age,study_hours,attendance,previous_score,sleep_hours,internet_access,extracurricular,family_income,final_score,result
+S0001,male,,2.5,68.6,56.7,8.5,no,Yes,High,41.9,Fail
+S0002,Male,19.0,7.3,72.5,56.6,5.4,N,no,Low,58.1,Pass
+S0003,Female,21.0,3.3,76.5,85.3,8.3,N,yes,Medium,57.2,Pass
+S0004, Male ,22.0,3.0,84.1,55.8,8.0,No,No,Medium,48.5,Fail
+S0005, Male ,23.0,4.5,59.0,73.5,6.7,Yes,Yes,High,55.9,Pass
+S0006,MALE,,3.8,78.9,66.9,4.5,yes,Yes,Medium,61.9,Pass
+S0007,male,22.0,3.9,,78.5,6.5,yes,Yes,Medium,58.7,Pass
+S0008,male,22.0,36.5,94.0,55.1,5.1,Yes,Yes,High,100.0,Pass
+S0009,FEMALE,24.0,8.0,71.3,78.3,8.7,yes,No,Medium,70.2,Pass
+S0010,Male,23.0,9.6,74.6,83.6,7.5,yes,No,High,88.0,Pass
+S0011,Male,24.0,4.3,66.6,70.1,7.0,Yes,yes,Medium,56.8,Pass
+S0012,male,,,75.5,78.6,6.0,No,yes,Medium,80.5,Pass
+S0013, Male ,18.0,1.9,65.0,95.6,6.8,Y,no,Low,67.3,Pass
+S0014, Male ,21.0,7.2,66.8,58.9,5.7,yes,no,Low,69.5,Pass
+S0015,Male,24.0,7.5,57.7,42.6,8.5,N,no,Low,60.7,Pass
+S0016, Male ,23.0,2.3,88.1,42.5,4.7,No,No,Medium,44.6,Fail
+S0017,FEMALE,18.0,2.8,84.4,45.7,5.0,No,,Medium,53.7,Pass
+S0018, Male ,21.0,4.3,58.8,64.2,5.3,Yes,No,High,48.7,Fail
+S0019, female ,18.0,5.1,70.1,70.4,5.5,No,Yes,High,190.0,Pass
+S0020,Female,21.0,5.9,78.8,79.0,5.7,Yes,Yes,Low,64.4,Pass
+S0021,,18.0,9.1,97.7,61.0,8.4,No,No,Medium,76.4,Pass
+S0022,MALE,24.0,,80.9,,5.0,Y,yes,Low,78.6,Pass
+S0023,FEMALE,20.0,4.4,79.4,55.6,8.0,N,no,High,61.4,Pass
+S0024,female,22.0,2.8,92.0,43.8,5.7,no,yes,Medium,47.9,Fail
+S0025,Female,21.0,9.3,91.0,75.4,6.2,No,yes,High,78.3,Pass
+S0026,MALE,22.0,4.2,73.4,45.1,7.1,No,No,Low,45.6,Fail
+S0027, Male ,21.0,,78.6,74.1,8.3,No,No,Medium,70.7,Pass
+S0028,female,23.0,3.6,93.1,90.3,6.1,Yes,no,Medium,66.3,Pass
+S0029,male,,2.9,75.9,53.7,6.4,N,yes,High,55.7,Pass
+S0030,male,21.0,3.1,,74.4,6.2,yes,yes,High,67.7,Pass
+S0031,FEMALE,20.0,7.9,76.0,48.6,7.7,Yes,yes,Medium,69.7,Pass
+S0032,male,18.0,6.8,58.5,93.7,7.3,Y,yes,Low,79.6,Pass
+S0033,female,21.0,5.2,94.7,46.7,7.2,Yes,Yes,Medium,59.2,Pass
+S0034,female,18.0,6.3,86.4,74.7,7.6,yes,No,Medium,71.4,Pass
+S0035,Female,20.0,5.7,,62.3,7.0,Y,Yes,High,57.6,Pass
+S0036,Male,19.0,6.2,94.6,83.2,9.1,yes,No,Medium,77.7,Pass
+S0037, female ,24.0,7.2,90.2,77.0,5.8,yes,Yes,High,77.9,Pass
+S0038,male,22.0,3.6,84.8,85.4,6.0,N,no,Medium,69.6,Pass
+S0039,FEMALE,21.0,3.8,82.3,52.0,6.9,no,yes,Medium,61.3,Pass
+S0040,male,24.0,8.0,60.3,48.0,8.1,Y,No,High,57.4,Pass
+S0041,Female,23.0,9.0,88.3,52.0,6.6,no,No,Low,75.6,Pass
+S0042,female,20.0,2.5,62.6,,4.9,N,No,High,43.4,Fail
+S0043, Male ,18.0,5.5,98.3,77.7,7.4,no,Yes,Medium,70.8,Pass
+S0044,male,21.0,7.6,97.8,46.1,6.7,yes,yes,Medium,65.6,Pass
+S0045,Male,24.0,2.4,90.6,66.5,9.0,no,No,,52.2,Pass
+S0046, Male ,18.0,6.4,60.6,95.7,8.6,Yes,no,Medium,74.0,Pass
+S0047,Female,19.0,2.3,73.6,83.5,7.5,no,no,Low,64.7,Pass
+S0048,male,21.0,6.3,98.5,79.4,8.9,no,yes,High,79.5,Pass
+S0049, Male ,22.0,5.9,74.2,78.0,6.5,yes,yes,High,72.0,Pass
+S0050,male,21.0,6.5,98.9,83.6,7.4,No,yes,Medium,75.5,Pass
+S0051,FEMALE,22.0,3.0,82.6,55.9,6.4,Yes,no,Medium,47.8,Fail
+S0052,Female,18.0,,91.7,84.2,8.8,yes,yes,High,78.2,Pass
+S0053, female ,21.0,31.0,66.3,57.0,4.9,No,No,Medium,100.0,Pass
+S0054,female,24.0,2.8,95.1,45.4,6.1,N,Yes,Medium,45.7,Fail
+S0055,MALE,20.0,3.5,95.2,63.0,6.0,Yes,no,Low,57.5,Pass
+S0056,female,23.0,6.6,57.9,95.8,7.6,Y,Yes,Medium,77.5,Pass
+S0057,female,20.0,2.5,72.1,55.9,7.8,Yes,no,Medium,44.8,Fail
+S0058, Male ,19.0,6.0,72.5,85.9,7.3,Y,No,Low,66.0,Pass
+S0059,Female,20.0,8.4,69.3,51.6,6.4,N,Yes,,61.0,Pass
+S0060,male,24.0,5.5,,45.7,8.7,N,No,Medium,54.5,Pass
+S0061,MALE,19.0,6.0,75.2,94.9,8.2,Yes,No,Medium,76.1,Pass
+S0062, Male ,18.0,5.5,93.4,52.8,8.9,No,no,Medium,68.3,Pass
+S0063,MALE,22.0,,89.6,63.2,8.0,Y,No,Low,59.9,Pass
+S0064, female ,23.0,5.6,82.4,76.9,6.9,no,No,High,67.0,Pass
+S0065,FEMALE,18.0,8.4,78.0,47.9,6.6,Yes,,Medium,65.4,Pass
+S0066,Female,22.0,7.7,73.5,71.2,5.3,Y,yes,Low,66.7,Pass
+S0067, Male ,22.0,5.0,73.2,65.3,8.5,yes,no,Low,60.9,Pass
+S0068,female,19.0,8.5,61.5,75.2,5.1,Yes,No,Medium,77.9,Pass
+S0069,Male,24.0,,80.9,47.7,5.6,Yes,no,Medium,61.3,Pass
+S0070, Male ,20.0,6.5,88.4,65.8,5.7,No,,High,68.0,Pass
+S0071,Male,20.0,2.2,96.3,56.0,8.0,N,Yes,High,61.7,Pass
+S0072,female,23.0,4.6,95.7,43.9,8.0,N,yes,Medium,62.9,Pass
+S0073,FEMALE,24.0,2.3,79.8,45.8,5.5,No,Yes,Medium,47.1,Fail
+S0074,Female,23.0,10.0,59.4,81.3,6.4,No,Yes,High,82.4,Pass
+S0075,male,24.0,9.5,67.6,84.0,4.9,N,yes,Medium,75.9,Pass
+S0076, Male ,19.0,2.4,78.6,,8.9,Y,Yes,Medium,42.7,Fail
+S0077,female,19.0,9.5,70.1,68.9,6.7,no,Yes,Low,70.6,Pass
+S0078, Male ,18.0,2.1,73.1,77.3,4.8,N,No,High,53.7,Pass
+S0079, female ,19.0,,71.9,42.0,8.1,Yes,yes,Medium,57.4,Pass
+S0080,FEMALE,20.0,8.1,76.4,44.0,7.0,Y,no,Low,65.3,Pass
+S0081, female ,19.0,8.1,81.8,63.1,9.2,Yes,No,High,67.1,Pass
+S0082,MALE,19.0,9.8,56.6,50.2,5.0,N,yes,Low,70.6,Pass
+S0083,Female,22.0,7.1,67.1,59.8,7.4,no,Yes,,67.0,Pass
+S0084,MALE,19.0,5.2,61.3,63.1,4.9,No,Yes,High,53.6,Pass
+S0085, Male ,24.0,9.9,81.8,42.2,8.9,Y,No,High,75.1,Pass
+S0086,Female,24.0,4.9,85.5,80.2,6.3,N,No,High,65.2,Pass
+S0087,FEMALE,23.0,8.9,56.7,83.6,5.6,N,yes,Medium,68.6,Pass
+S0088,FEMALE,18.0,9.2,94.1,67.8,8.0,no,No,Medium,82.9,Pass
+S0089,female,19.0,4.9,69.6,63.8,6.6,yes,No,High,58.3,Pass
+S0090, Male ,24.0,,65.5,81.3,5.1,yes,yes,Low,68.9,Pass
+S0091,MALE,23.0,7.2,87.8,85.9,7.0,Yes,No,Medium,85.5,Pass
+S0092, female ,21.0,6.2,,45.8,5.3,N,yes,Low,57.5,Pass
+S0093,male,21.0,7.2,94.5,54.2,4.7,Y,No,Low,68.4,Pass
+S0094,Male,24.0,4.7,55.9,62.8,6.2,Y,No,Low,49.2,Fail
+S0095,male,22.0,3.3,91.0,79.2,8.8,Yes,No,High,65.8,Pass
+S0096,MALE,24.0,6.2,68.3,84.1,8.6,N,Yes,Medium,70.4,Pass
+S0097,MALE,22.0,6.1,67.3,48.5,6.7,Yes,No,High,49.9,Fail
+S0098,FEMALE,21.0,7.8,76.6,70.9,8.6,no,yes,Medium,69.4,Pass
+S0099,male,23.0,3.6,85.6,95.5,8.9,no,Yes,High,65.8,Pass
+S0100,FEMALE,22.0,1.8,59.3,60.0,7.1,No,Yes,High,47.1,Fail
+S0101,FEMALE,23.0,2.0,93.2,58.4,5.1,Yes,No,Low,57.7,Pass
+S0102, female ,23.0,4.2,60.9,45.0,9.0,No,no,Medium,46.1,Fail
+S0103,Female,22.0,7.3,97.9,95.8,7.0,Y,Yes,Medium,83.6,Pass
+S0104,Male,20.0,6.3,74.5,76.9,7.3,yes,yes,High,68.2,Pass
+S0105,male,24.0,6.2,91.3,61.7,6.6,yes,No,Medium,69.5,Pass
+S0106,Female,23.0,8.6,66.9,88.1,8.0,No,yes,High,79.3,Pass
+S0107,female,,3.8,73.3,60.4,8.6,Yes,no,High,55.2,Pass
+S0108,male,19.0,4.6,83.4,87.4,6.5,Yes,No,High,69.9,Pass
+S0109,Female,21.0,4.1,63.3,83.1,7.5,yes,yes,Low,64.5,Pass
+S0110,FEMALE,18.0,9.5,64.3,,7.0,yes,yes,Low,71.4,Pass
+S0111,MALE,21.0,7.7,91.3,53.0,8.8,No,No,Low,76.0,Pass
+S0112, female ,21.0,2.7,87.6,71.9,6.8,No,no,High,56.3,Pass
+S0113,Male,23.0,8.4,88.4,94.2,5.6,Y,Yes,Medium,80.3,Pass
+S0114,Female,20.0,5.2,93.2,77.7,4.9,N,Yes,High,65.2,Pass
+S0115,MALE,24.0,8.1,,58.1,5.9,N,No,High,69.4,Pass
+S0116,male,20.0,9.0,77.7,63.1,6.4,yes,No,High,67.6,Pass
+S0117,Female,22.0,1.9,62.0,47.8,5.2,Yes,No,High,35.8,Fail
+S0118, Male ,18.0,,68.7,79.2,4.5,Y,No,High,56.4,Pass
+S0119,MALE,20.0,2.6,77.3,68.3,7.0,No,no,High,57.3,Pass
+S0120,female,22.0,2.1,61.0,89.8,8.1,No,yes,High,60.7,Pass
+S0121,MALE,18.0,6.7,92.5,65.7,5.1,N,yes,Medium,70.1,Pass
+S0122,Male,20.0,7.6,93.7,52.2,5.8,Y,no,High,64.1,Pass
+S0123,female,21.0,2.2,56.3,43.9,7.0,N,No,Medium,42.5,Fail
+S0124, female ,21.0,7.9,63.5,43.4,7.7,no,Yes,High,64.1,Pass
+S0125,Male,18.0,5.1,91.6,95.8,6.8,yes,No,Medium,74.6,Pass
+S0126,male,,3.7,,54.9,8.1,Y,yes,Low,53.9,Pass
+S0127,female,20.0,3.6,66.0,63.0,5.9,N,No,Low,57.6,Pass
+S0128,Female,24.0,8.9,,84.8,8.1,Yes,yes,Medium,78.7,Pass
+S0129, Male ,20.0,2.3,95.4,76.7,8.3,Y,No,High,60.0,Pass
+S0130,Male,18.0,5.9,86.0,69.0,7.3,no,Yes,Low,69.9,Pass
+S0131, Male ,23.0,4.2,67.1,94.1,8.2,yes,yes,Low,70.8,Pass
+S0132,male,24.0,8.5,91.2,85.8,7.1,No,No,High,78.8,Pass
+S0133,male,24.0,7.8,77.2,94.2,5.4,No,no,Medium,81.6,Pass
+S0134, female ,18.0,4.4,,42.9,8.6,No,No,Medium,56.0,Pass
+S0135,male,22.0,6.7,60.5,60.3,6.6,No,Yes,Medium,60.3,Pass
+S0136,MALE,22.0,7.3,56.3,60.2,5.7,Y,no,Low,58.5,Pass
+S0137,MALE,,4.4,71.4,80.9,7.9,no,Yes,Low,70.1,Pass
+S0138, female ,,4.3,81.1,63.9,7.5,no,No,High,56.7,Pass
+S0139,MALE,21.0,3.0,62.8,53.4,8.4,No,no,High,44.6,Fail
+S0140,Female,22.0,7.2,93.3,77.3,5.5,Yes,yes,High,71.8,Pass
+S0141,FEMALE,22.0,3.6,80.8,70.2,4.9,No,no,High,56.1,Pass
+S0142, Male ,24.0,4.3,70.4,92.8,7.4,Y,no,Medium,73.9,Pass
+S0143, Male ,23.0,2.3,62.2,89.0,6.9,no,No,Medium,53.4,Pass
+S0144,Female,18.0,9.6,94.4,71.0,8.3,yes,yes,High,76.4,Pass
+S0145,FEMALE,21.0,9.0,88.0,82.0,7.4,No,yes,Medium,83.3,Pass
+S0146,female,24.0,9.3,85.3,54.6,7.8,N,no,Low,71.1,Pass
+S0147, female ,22.0,6.9,67.5,45.9,5.8,No,no,Medium,53.2,Pass
+S0148, female ,23.0,5.3,72.0,81.7,7.5,Yes,no,Medium,64.3,Pass
+S0149,male,19.0,5.9,62.2,68.4,7.0,Yes,yes,Medium,55.8,Pass
+S0150, Male ,20.0,9.8,80.2,43.0,5.8,no,no,High,71.7,Pass
+S0151, Male ,22.0,9.5,97.5,91.0,5.4,Y,Yes,High,96.3,Pass
+S0152,male,21.0,7.3,92.7,75.4,4.8,No,No,High,78.6,Pass
+S0153,female,22.0,8.2,83.5,55.1,5.1,N,No,High,76.3,Pass
+S0154,Male,19.0,4.4,84.8,77.0,5.0,yes,No,High,67.8,Pass
+S0155, Male ,18.0,5.2,66.8,42.8,6.6,N,no,Medium,50.9,Pass
+S0156, Male ,21.0,3.0,73.0,76.2,6.6,N,No,Low,55.2,Pass
+S0157,Male,18.0,4.9,55.9,90.9,7.8,N,no,Medium,59.9,Pass
+S0158,male,24.0,8.0,89.3,86.3,6.8,yes,No,Low,87.1,Pass
+S0159,Male,,5.7,88.8,47.3,6.0,No,yes,Medium,61.4,Pass
+S0160, Male ,,8.8,55.4,75.0,5.2,no,no,Medium,78.2,Pass
+S0161,male,23.0,,95.1,87.1,9.1,N,no,High,77.8,Pass
+S0162,Male,18.0,7.6,83.5,45.5,4.6,N,No,High,64.6,Pass
+S0163,female,22.0,8.4,81.5,86.1,9.1,no,yes,Low,76.9,Pass
+S0164,male,23.0,9.3,55.4,48.2,5.8,Yes,yes,Medium,57.7,Pass
+S0165, Male ,19.0,6.4,66.1,74.1,5.1,Y,Yes,High,60.8,Pass
+S0166,Female,18.0,9.7,90.4,75.2,6.6,No,No,High,81.2,Pass
+S0167, female ,19.0,6.4,68.4,,4.5,No,Yes,Medium,59.6,Pass
+S0168, Male ,23.0,38.0,97.5,52.9,4.9,Yes,yes,High,100.0,Pass
+S0169,MALE,21.0,3.8,83.3,60.2,4.6,No,no,Low,61.3,Pass
+S0170, female ,21.0,3.5,,87.1,5.5,Y,yes,High,71.4,Pass
+S0171, Male ,22.0,7.1,71.6,81.8,6.5,yes,No,Low,69.7,Pass
+S0172, female ,22.0,9.4,,63.7,8.2,yes,Yes,Medium,72.8,Pass
+S0173,FEMALE,22.0,8.7,66.1,48.5,6.8,N,no,Medium,62.0,Pass
+S0174, Male ,19.0,2.6,75.5,78.9,6.2,Y,yes,Medium,52.4,Pass
+S0175,male,20.0,7.7,84.8,71.5,7.8,yes,no,High,72.7,Pass
+S0176,male,20.0,3.4,91.3,59.4,4.6,no,no,High,61.6,Pass
+S0177,FEMALE,20.0,4.0,72.5,,4.9,No,no,Low,73.9,Pass
+S0178,female,21.0,7.3,59.5,53.5,8.0,Y,no,Medium,63.5,Pass
+S0179,FEMALE,21.0,6.7,77.5,44.5,5.2,no,no,Medium,64.4,Pass
+S0180,FEMALE,24.0,48.0,84.1,51.4,5.8,Yes,yes,High,100.0,Pass
+S0181, female ,20.0,3.3,92.1,,6.3,no,no,Medium,54.6,Pass
+S0182,Male,23.0,8.0,71.5,56.8,7.1,Yes,yes,High,61.0,Pass
+S0183,male,22.0,7.7,83.5,82.9,5.4,Yes,yes,Medium,81.4,Pass
+S0184,Male,18.0,6.4,81.8,51.1,8.7,no,no,Medium,65.4,Pass
+S0185,FEMALE,24.0,5.7,68.1,62.0,5.7,Yes,Yes,High,53.6,Pass
+S0186,female,23.0,8.9,59.8,,6.3,no,,High,70.4,Pass
+S0187,male,23.0,4.5,57.8,55.2,4.6,No,no,Medium,56.1,Pass
+S0188, Male ,,9.6,98.5,73.4,9.1,No,No,Medium,87.5,Pass
+S0189, Male ,18.0,1.9,83.2,49.2,7.9,Yes,yes,Low,42.9,Fail
+S0190, Male ,20.0,9.5,92.9,,6.3,No,Yes,Medium,87.6,Pass
+S0191, female ,18.0,9.7,66.5,76.1,9.1,N,yes,High,74.0,Pass
+S0192,MALE,22.0,2.8,86.3,62.3,5.7,N,Yes,Medium,59.9,Pass
+S0193,FEMALE,,,94.3,50.5,9.2,no,yes,High,83.2,Pass
+S0194,MALE,,5.7,68.1,89.5,5.4,Y,Yes,Low,68.8,Pass
+S0195,Female,20.0,3.8,61.6,46.4,8.0,Y,yes,High,50.1,Pass
+S0196, female ,20.0,6.8,88.7,42.4,4.9,Y,No,Medium,57.7,Pass
+S0197, Male ,23.0,3.5,94.6,92.0,7.6,no,Yes,High,78.7,Pass
+S0198,male,24.0,9.3,90.4,80.2,5.5,Yes,Yes,High,86.6,Pass
+S0199, female ,23.0,50.0,90.3,74.1,6.3,no,Yes,High,100.0,Pass
+S0200,male,22.0,8.2,,57.3,9.0,Yes,yes,High,75.3,Pass
+S0201,Male,24.0,4.9,84.1,79.4,8.9,Yes,Yes,Medium,71.4,Pass
+S0202,Male,19.0,6.2,85.0,84.8,5.2,N,No,High,80.8,Pass
+S0203,male,20.0,4.7,86.7,67.7,7.9,N,yes,High,63.9,Pass
+S0204, Male ,18.0,3.9,83.8,48.9,8.0,No,No,High,60.6,Pass
+S0205,MALE,22.0,6.0,135.0,49.7,7.1,yes,yes,Low,75.7,Pass
+S0206,FEMALE,23.0,5.9,66.4,56.6,5.1,yes,,Medium,55.1,Pass
+S0207, female ,19.0,2.6,73.4,66.3,6.8,No,yes,Medium,56.3,Pass
+S0208, female ,20.0,9.8,72.1,54.9,5.9,Yes,yes,Low,76.9,Pass
+S0209, Male ,20.0,5.6,56.6,51.4,6.2,Yes,No,High,51.2,Pass
+S0210,FEMALE,,8.7,86.2,79.4,4.7,No,No,Medium,80.1,Pass
+S0211,Male,,9.3,80.2,74.2,7.6,N,yes,High,86.4,Pass
+S0212,MALE,23.0,4.8,63.4,80.7,9.1,Y,Yes,Low,60.6,Pass
+S0213,FEMALE,21.0,,87.0,75.1,5.6,Y,yes,Medium,62.6,Pass
+S0214,Male,19.0,6.4,64.8,46.8,6.5,no,yes,High,56.0,Pass
+S0215,FEMALE,22.0,3.6,78.5,86.6,4.6,N,,Medium,63.9,Pass
+S0216,Female,23.0,3.0,89.5,58.3,8.2,No,no,High,58.1,Pass
+S0217, female ,18.0,3.9,94.9,64.6,7.2,N,no,Low,62.3,Pass
+S0218,Female,20.0,9.5,84.6,72.1,6.4,No,Yes,Medium,79.9,Pass
+S0219,FEMALE,22.0,6.5,77.3,52.4,5.6,no,no,Medium,68.3,Pass
+S0220, female ,21.0,5.2,92.2,95.3,9.1,Y,No,High,82.2,Pass
+S0221,MALE,23.0,3.0,92.0,94.7,7.2,Y,no,,68.1,Pass
+S0222, Male ,24.0,4.5,93.6,75.4,7.7,yes,No,Low,75.4,Pass
+S0223,Female,20.0,4.9,63.0,88.6,7.7,yes,No,High,66.5,Pass
+S0224, Male ,24.0,8.6,59.3,95.3,5.2,yes,No,High,82.1,Pass
+S0225,Male,19.0,5.9,60.6,69.4,8.1,Yes,no,High,61.2,Pass
+S0226,Male,23.0,7.2,66.4,67.1,5.7,N,No,High,61.5,Pass
+S0227,female,23.0,7.4,90.6,75.8,6.8,no,no,Low,83.6,Pass
+S0228,Male,24.0,3.9,88.6,53.2,7.7,Y,no,High,58.8,Pass
+S0229,Male,23.0,8.5,63.1,44.9,6.1,N,yes,High,63.4,Pass
+S0230, female ,23.0,9.7,84.9,48.1,9.1,Yes,Yes,Medium,69.4,Pass
+S0231,MALE,72.0,7.1,69.8,50.1,8.1,No,yes,Medium,57.6,Pass
+S0232,Male,18.0,5.8,58.9,87.6,4.8,no,No,High,72.0,Pass
+S0233,male,23.0,3.2,70.6,91.2,6.2,Yes,no,High,57.6,Pass
+S0234,MALE,23.0,8.3,87.7,68.9,5.2,Yes,no,High,70.0,Pass
+S0235,male,21.0,3.2,68.5,50.6,7.0,No,No,Low,45.3,Fail
+S0236,male,22.0,7.7,89.7,91.8,5.0,Yes,no,Low,85.2,Pass
+S0237, Male ,20.0,49.5,69.6,44.9,6.8,Yes,,High,100.0,Pass
+S0238,FEMALE,18.0,9.3,66.5,61.7,6.0,yes,Yes,Medium,68.2,Pass
+S0239,male,20.0,6.2,67.9,,7.1,N,yes,High,57.5,Pass
+S0240, Male ,20.0,7.1,92.5,55.6,7.5,No,No,Medium,71.3,Pass
+S0241,Male,,2.3,75.7,75.3,6.1,No,No,High,185.0,Fail
+S0242,male,19.0,2.1,,90.1,8.7,N,yes,Low,63.3,Pass
+S0243,FEMALE,20.0,8.7,80.7,66.5,7.9,No,Yes,High,72.7,Pass
+S0244,female,24.0,9.6,96.5,47.6,4.6,N,no,High,71.8,Pass
+S0245,Female,21.0,7.3,,44.8,6.3,N,yes,Low,60.9,Pass
+S0246, Male ,19.0,8.1,94.1,71.0,7.9,no,yes,Medium,80.8,Pass
+S0247,female,19.0,,77.0,50.5,5.7,N,No,High,60.6,Pass
+S0248, Male ,19.0,8.7,93.2,43.6,4.7,No,no,High,64.8,Pass
+S0249,Female,19.0,3.7,71.8,69.8,7.8,Y,no,High,52.3,Pass
+S0250,FEMALE,18.0,7.6,68.1,45.8,7.1,no,no,Medium,56.8,Pass
+S0251,MALE,20.0,1.9,57.4,54.7,7.1,no,yes,Medium,49.7,Fail
+S0252,Female,24.0,5.9,92.6,66.0,6.8,Y,yes,Medium,65.1,Pass
+S0253, female ,24.0,4.9,61.0,73.3,7.2,N,Yes,High,61.3,Pass
+S0254,female,18.0,6.9,63.8,64.6,7.1,N,Yes,High,57.9,Pass
+S0255,male,22.0,7.3,73.0,82.3,6.0,N,No,Medium,70.4,Pass
+S0256,Male,24.0,6.9,80.1,90.5,6.7,N,No,High,77.8,Pass
+S0257, female ,22.0,5.8,94.9,54.4,8.6,No,yes,Medium,63.2,Pass
+S0258,male,24.0,5.8,75.1,47.9,7.3,Y,no,Medium,61.6,Pass
+S0259,male,23.0,1.9,68.9,54.3,8.5,Yes,no,Medium,47.7,Fail
+S0260, Male ,,6.3,86.5,54.8,5.3,yes,No,Medium,63.5,Pass
+S0261,Female,18.0,1.9,89.3,64.3,7.0,yes,no,Medium,61.9,Pass
+S0262,MALE,23.0,6.1,76.5,52.8,6.6,Yes,Yes,High,54.8,Pass
+S0263,female,20.0,4.1,82.8,90.1,8.4,yes,no,Medium,66.8,Pass
+S0264,male,24.0,9.8,62.8,46.0,7.0,Yes,No,Medium,62.7,Pass
+S0265, Male ,22.0,1.9,82.9,73.6,6.6,Yes,no,Low,54.4,Pass
+S0266,female,19.0,8.5,55.2,44.9,8.1,N,Yes,Medium,59.8,Pass
+S0267,Female,22.0,7.3,67.0,65.5,6.9,yes,yes,,68.8,Pass
+S0268,MALE,21.0,8.4,88.5,53.7,7.9,Yes,no,Medium,68.7,Pass
+S0269, female ,19.0,9.3,160.0,74.9,8.6,yes,yes,Medium,100.0,Pass
+S0270,Female,19.0,2.7,,51.6,7.4,No,Yes,Medium,55.4,Pass
+S0271,Male,19.0,2.6,76.5,62.2,6.2,N,No,Medium,48.9,Fail
+S0272,Female,24.0,3.0,88.6,,7.4,yes,Yes,High,54.4,Pass
+S0273,male,23.0,3.4,58.9,52.5,6.0,N,No,Medium,47.7,Fail
+S0274,MALE,24.0,6.1,82.0,61.4,4.8,yes,Yes,Medium,62.4,Pass
+S0275,Female,22.0,8.5,82.9,56.6,9.0,No,no,High,65.3,Pass
+S0276,male,24.0,4.0,72.7,60.1,8.3,N,Yes,Low,56.5,Pass
+S0277,male,19.0,5.1,97.5,43.7,5.4,no,No,High,61.5,Pass
+S0278,,23.0,4.9,71.9,72.7,7.7,yes,No,Medium,63.6,Pass
+S0279,Female,21.0,5.1,56.7,57.2,8.1,Yes,Yes,Medium,51.7,Pass
+S0280,Female,18.0,6.4,63.8,48.0,5.2,Y,no,Medium,61.2,Pass
+S0281, Male ,,9.9,71.4,67.1,5.8,No,yes,High,75.3,Pass
+S0282,female,20.0,3.7,55.6,64.6,6.4,yes,No,Medium,46.5,Fail
+S0283, Male ,23.0,7.4,69.2,83.1,6.0,No,No,Low,73.1,Pass
+S0284,Female,23.0,8.8,91.7,53.9,5.0,No,yes,Medium,70.8,Pass
+S0285, female ,19.0,7.2,63.4,57.9,7.6,Yes,Yes,Low,68.2,Pass
+S0286,Female,21.0,8.8,84.8,50.5,4.7,Yes,no,,73.2,Pass
+S0287,Male,22.0,8.0,82.6,84.9,8.9,yes,,Medium,79.7,Pass
+S0288,male,20.0,2.6,65.9,,5.3,yes,yes,Medium,61.0,Pass
+S0289,FEMALE,24.0,4.9,85.5,90.9,4.6,N,Yes,Medium,72.6,Pass
+S0290,,23.0,6.3,70.2,73.2,5.0,N,No,Low,65.7,Pass
+S0291,Male,24.0,2.3,60.7,71.8,5.4,No,yes,High,44.8,Fail
+S0292,Male,21.0,1.9,71.9,54.4,4.6,No,no,Medium,47.5,Fail
+S0293,female,19.0,,80.9,64.2,7.5,No,no,Low,63.4,Pass
+S0294,MALE,,5.9,62.3,70.2,6.3,Yes,No,High,61.3,Pass
+S0295,Female,19.0,5.4,91.2,88.6,6.8,No,Yes,Low,79.5,Pass
+S0296,MALE,20.0,8.2,68.1,53.7,7.4,no,No,Medium,66.5,Pass
+S0297, female ,24.0,6.4,67.8,67.6,7.3,yes,no,Medium,61.7,Pass
+S0298,FEMALE,24.0,8.8,87.0,67.0,4.7,yes,no,Low,73.5,Pass
+S0299,Male,21.0,2.6,81.2,42.8,5.5,Y,Yes,Low,47.2,Fail
+S0300,male,24.0,6.1,69.9,65.1,7.9,no,no,Low,58.0,Pass
+S0301,male,,2.1,94.1,89.1,4.6,No,No,Low,67.3,Pass
+S0302,MALE,20.0,3.5,98.8,55.4,8.8,Yes,No,Medium,60.5,Pass
+S0303,Male,23.0,8.9,,65.4,7.6,Y,No,Medium,69.2,Pass
+S0304,female,22.0,9.1,94.7,54.0,8.9,Yes,yes,Low,78.8,Pass
+S0305,MALE,21.0,5.7,70.8,92.1,8.4,Yes,no,High,71.0,Pass
+S0306,FEMALE,21.0,2.2,63.3,93.1,6.7,N,no,Medium,58.6,Pass
+S0307,MALE,24.0,2.4,96.7,91.3,7.5,N,No,High,62.3,Pass
+S0308,Male,,9.4,95.4,90.5,6.2,No,yes,Low,94.5,Pass
+S0309,Female,24.0,9.2,72.7,64.6,8.0,No,No,Low,78.7,Pass
+S0310,female,21.0,6.4,65.1,44.4,8.7,No,no,Low,54.4,Pass
+S0311,Male,22.0,2.1,87.0,95.5,8.4,N,yes,High,60.9,Pass
+S0312,female,22.0,9.4,60.8,81.6,8.2,no,No,High,70.9,Pass
+S0313, Male ,,4.4,87.3,69.2,4.8,no,Yes,Low,69.0,Pass
+S0314, Male ,19.0,9.7,,65.0,7.4,N,No,Medium,79.5,Pass
+S0315,male,24.0,6.6,62.4,63.3,7.0,no,no,Medium,59.7,Pass
+S0316,female,19.0,8.0,71.1,85.7,8.0,Y,Yes,Medium,71.6,Pass
+S0317,FEMALE,24.0,7.6,83.6,79.6,8.4,Yes,no,High,74.3,Pass
+S0318,MALE,22.0,5.1,56.6,47.3,4.9,No,No,Medium,49.4,Fail
+S0319, Male ,19.0,2.4,93.6,,5.5,No,yes,Medium,57.4,Pass
+S0320,MALE,24.0,3.1,66.3,46.5,6.9,No,no,High,39.7,Fail
+S0321,MALE,,3.8,78.5,82.7,5.0,no,no,High,68.6,Pass
+S0322,FEMALE,18.0,8.6,57.1,79.4,5.6,no,no,Medium,75.3,Pass
+S0323,Male,23.0,5.0,98.8,64.0,6.3,N,Yes,Medium,70.8,Pass
+S0324,MALE,21.0,9.2,84.1,53.8,5.4,no,Yes,Medium,66.3,Pass
+S0325,female,24.0,4.5,83.8,61.4,7.6,N,yes,Low,56.6,Pass
+S0326,FEMALE,20.0,8.0,55.9,54.9,7.2,No,,High,56.3,Pass
+S0327, Male ,22.0,2.9,85.3,95.9,9.0,yes,yes,High,72.7,Pass
+S0328,Female,18.0,9.9,73.3,42.9,7.1,N,yes,High,67.5,Pass
+S0329,MALE,23.0,7.7,71.7,78.1,7.1,Yes,no,Low,69.8,Pass
+S0330,male,24.0,5.9,79.1,50.7,8.0,no,No,Low,62.2,Pass
+S0331,FEMALE,22.0,9.8,75.9,66.8,8.1,Yes,no,Low,81.9,Pass
+S0332,Male,24.0,2.2,61.7,72.8,7.2,No,No,Low,49.0,Fail
+S0333, female ,94.0,5.4,85.6,73.5,7.7,no,No,High,66.0,Pass
+S0334, Male ,20.0,8.7,82.7,94.7,7.8,Y,,High,93.0,Pass
+S0335, Male ,18.0,4.6,68.2,67.0,6.5,no,no,Low,51.9,Pass
+S0336, female ,24.0,8.1,84.1,49.5,5.0,Yes,no,,67.3,Pass
+S0337,,19.0,9.6,84.1,80.0,8.2,Y,No,Medium,86.3,Pass
+S0338,Female,,5.1,66.9,52.0,7.1,N,Yes,Medium,48.9,Fail
+S0339, Male ,21.0,8.1,81.6,89.1,6.9,No,no,Low,74.8,Pass
+S0340, Male ,22.0,2.0,61.0,75.8,7.6,No,Yes,Medium,53.5,Pass
+S0341,Male,19.0,,91.5,80.0,7.0,Yes,No,,63.1,Pass
+S0342, Male ,24.0,9.9,59.6,42.1,7.3,No,No,Medium,57.7,Pass
+S0343,FEMALE,21.0,5.8,86.6,75.9,8.9,no,yes,Medium,66.9,Pass
+S0344,female,18.0,4.7,60.2,62.8,8.7,N,yes,Medium,54.9,Pass
+S0345,Female,,9.5,60.0,79.3,7.1,Y,Yes,Medium,81.0,Pass
+S0346,male,24.0,5.3,59.7,70.7,9.2,No,No,High,59.2,Pass
+S0347,Female,21.0,7.4,,,8.5,N,no,High,56.6,Pass
+S0348,female,20.0,7.2,63.8,82.7,6.4,No,no,Medium,66.3,Pass
+S0349,FEMALE,18.0,2.5,66.6,79.7,7.5,Yes,Yes,Medium,55.3,Pass
+S0350,female,21.0,41.0,78.0,,8.4,yes,yes,Low,100.0,Pass
+S0351,Male,18.0,8.3,63.9,73.1,6.0,Y,Yes,Medium,75.9,Pass
+S0352,male,21.0,7.6,86.0,53.2,5.6,N,Yes,Medium,72.6,Pass
+S0353,Female,22.0,2.5,68.0,79.0,7.1,yes,yes,Low,57.5,Pass
+S0354,MALE,20.0,3.1,,75.5,6.3,No,no,Medium,58.7,Pass
+S0355,Female,19.0,7.6,,60.1,7.1,Y,no,Low,70.4,Pass
+S0356,Male,21.0,,64.1,92.3,8.0,No,No,High,79.8,Pass
+S0357,male,18.0,7.9,96.1,69.8,6.2,yes,yes,High,79.6,Pass
+S0358,FEMALE,20.0,4.4,69.5,91.1,6.6,no,No,Low,66.8,Pass
+S0359,female,19.0,2.7,55.1,61.7,9.0,yes,Yes,High,49.2,Fail
+S0360,female,7.0,1.8,84.6,44.8,4.5,no,no,High,41.9,Fail
+S0361,FEMALE,20.0,4.3,94.9,62.7,4.7,N,Yes,Low,68.2,Pass
+S0362,male,18.0,4.8,91.8,67.1,5.8,Y,Yes,High,68.3,Pass
+S0363,FEMALE,24.0,4.0,,,4.6,no,no,Low,48.2,Fail
+S0364, Male ,23.0,2.9,61.6,61.8,5.1,N,no,Low,53.1,Pass
+S0365,Female,23.0,,59.0,,8.7,N,yes,High,56.7,Pass
+S0366,Male,,5.5,77.5,80.1,4.5,No,no,Medium,68.9,Pass
+S0367,FEMALE,24.0,,86.8,72.3,9.1,yes,No,Medium,68.4,Pass
+S0368,Male,,5.1,59.5,83.8,5.5,Y,no,Medium,66.7,Pass
+S0369, Male ,19.0,2.0,150.0,49.5,6.0,N,Yes,High,73.4,Pass
+S0370,female,18.0,4.7,65.2,60.1,8.1,N,Yes,High,55.6,Pass
+S0371,FEMALE,20.0,2.6,98.5,71.1,8.9,No,yes,High,65.0,Pass
+S0372,male,24.0,6.7,68.0,77.0,8.4,No,Yes,Medium,67.5,Pass
+S0373,female,21.0,4.5,75.4,81.8,8.8,N,No,Medium,68.9,Pass
+S0374,female,23.0,5.0,59.4,,6.9,N,yes,Medium,58.0,Pass
+S0375,male,24.0,4.2,62.7,89.0,7.2,N,no,High,63.2,Pass
+S0376,Female,19.0,5.0,56.7,80.0,7.2,Y,no,High,60.7,Pass
+S0377,Female,24.0,2.5,67.8,82.7,4.9,No,no,High,51.6,Pass
+S0378,FEMALE,23.0,9.2,90.3,83.1,6.7,yes,Yes,High,84.8,Pass
+S0379,female,21.0,9.2,68.8,59.3,5.2,no,Yes,Low,71.2,Pass
+S0380,FEMALE,21.0,9.8,87.5,90.5,5.7,yes,No,High,82.4,Pass
+S0381,Female,22.0,6.5,59.2,,8.7,Y,no,Medium,60.3,Pass
+S0382,MALE,9.0,3.2,88.4,64.8,5.7,N,,,61.3,Pass
+S0383, Male ,18.0,4.9,57.0,44.9,5.7,N,no,High,53.7,Pass
+S0384,FEMALE,18.0,2.9,92.5,62.1,5.9,Yes,,Low,60.2,Pass
+S0385,FEMALE,,4.3,84.2,66.4,7.2,N,No,Low,55.7,Pass
+S0386,MALE,19.0,5.8,62.5,,7.2,No,No,Medium,67.4,Pass
+S0387,Female,24.0,2.3,70.7,86.8,5.5,yes,Yes,Medium,66.4,Pass
+S0388,FEMALE,19.0,5.4,74.3,67.4,4.9,yes,Yes,High,62.7,Pass
+S0389,Male,22.0,5.3,82.4,70.7,6.0,yes,No,Medium,69.5,Pass
+S0390,Female,23.0,5.8,93.7,86.6,6.8,yes,yes,Medium,74.0,Pass
+S0391,Female,22.0,2.4,59.1,90.6,6.8,no,Yes,Medium,65.2,Pass
+S0392, Male ,22.0,,90.9,,8.7,No,no,Medium,60.8,Pass
+S0393,FEMALE,21.0,3.8,63.0,61.9,7.8,Yes,No,Low,57.9,Pass
+S0394,female,18.0,6.9,72.6,78.4,8.4,No,Yes,Low,71.6,Pass
+S0395, female ,,6.7,97.3,79.4,4.9,No,Yes,High,76.1,Pass
+S0396, female ,8.0,3.4,,94.8,7.5,Y,yes,Medium,68.2,Pass
+S0397, female ,19.0,2.7,72.0,89.7,4.7,yes,No,High,61.1,Pass
+S0398, Male ,20.0,4.3,,52.2,8.3,yes,no,Medium,52.9,Pass
+S0399, female ,18.0,9.6,90.2,89.7,6.3,no,yes,Low,91.3,Pass
+S0400,MALE,18.0,,83.5,46.7,8.2,Yes,No,High,53.0,Pass
+S0401,male,19.0,6.9,90.1,63.1,8.8,Yes,No,Medium,73.7,Pass
+S0402,Female,21.0,,60.0,51.7,6.1,Y,Yes,Medium,60.2,Pass
+S0403,female,23.0,4.5,85.6,93.7,8.6,Y,No,Medium,76.5,Pass
+S0404,male,24.0,4.5,57.6,46.2,6.5,Y,no,High,51.6,Pass
+S0405, Male ,22.0,8.5,96.5,50.9,8.9,N,Yes,High,69.6,Pass
+S0406,Female,21.0,8.8,62.0,48.0,5.1,yes,Yes,Medium,66.6,Pass
+S0407, Male ,18.0,9.8,,50.0,8.1,yes,no,,67.1,Pass
+S0408, Male ,18.0,2.9,81.0,50.1,8.0,no,yes,Medium,49.2,Fail
+S0409,MALE,,45.0,90.3,,8.5,Yes,no,Medium,100.0,Pass
+S0410,Male,21.0,9.6,84.8,93.4,8.9,Yes,Yes,High,91.0,Pass
+S0411,Male,22.0,3.4,63.0,43.2,7.5,Y,Yes,High,42.9,Fail
+S0412, Male ,22.0,4.4,71.7,64.5,7.5,No,Yes,Medium,57.8,Pass
+S0413, female ,18.0,9.7,70.8,78.8,4.8,Yes,no,Medium,82.1,Pass
+S0414,male,23.0,9.7,56.3,92.3,7.0,no,No,Medium,82.0,Pass
+S0415, female ,,4.2,85.1,67.6,6.0,yes,No,Medium,68.5,Pass
+S0416,FEMALE,22.0,7.5,91.9,64.7,7.2,Yes,yes,High,77.4,Pass
+S0417, Male ,19.0,5.8,97.8,81.8,6.0,no,No,Medium,76.8,Pass
+S0418,FEMALE,23.0,6.5,60.7,43.2,7.8,yes,No,High,48.4,Fail
+S0419,,19.0,3.8,95.5,52.2,5.2,No,Yes,High,55.9,Pass
+S0420,FEMALE,20.0,4.9,60.0,43.2,7.7,Y,Yes,Medium,54.8,Pass
+S0421, Male ,21.0,8.5,73.1,85.3,9.2,Y,no,High,77.1,Pass
+S0422,MALE,18.0,5.0,57.0,87.1,9.1,Y,Yes,High,66.2,Pass
+S0423,Male,22.0,2.7,66.5,70.1,8.0,Yes,Yes,Medium,52.3,Pass
+S0424,male,20.0,34.5,68.8,60.1,7.2,no,yes,Medium,100.0,Pass
+S0425,FEMALE,19.0,6.7,86.0,73.3,4.9,Y,,Low,77.6,Pass
+S0426, Male ,22.0,6.3,84.8,77.4,6.5,yes,Yes,High,67.9,Pass
+S0427,MALE,21.0,7.4,88.8,84.5,8.2,N,No,Medium,74.3,Pass
+S0428, female ,19.0,6.3,80.4,68.3,5.2,no,Yes,High,62.5,Pass
+S0429,Male,,9.6,79.9,78.0,6.1,no,No,High,87.9,Pass
+S0430, Male ,23.0,5.6,98.0,70.6,6.7,N,No,Medium,71.3,Pass
+S0431,male,18.0,7.6,84.5,71.6,8.0,Yes,Yes,Low,78.1,Pass
+S0432,,22.0,5.4,69.9,,7.1,N,,Medium,68.4,Pass
+S0433,MALE,20.0,4.2,78.0,72.6,5.7,Yes,Yes,High,66.8,Pass
+S0434, female ,18.0,7.5,85.8,90.5,6.4,No,yes,Low,84.9,Pass
+S0435,female,22.0,8.5,59.2,58.6,6.5,No,yes,Medium,61.5,Pass
+S0436, female ,22.0,8.3,84.1,84.6,7.8,Yes,No,Low,87.0,Pass
+S0437,FEMALE,22.0,5.2,65.9,54.2,8.1,Yes,No,High,50.6,Pass
+S0438, female ,24.0,,70.2,62.1,6.8,no,no,High,67.0,Pass
+S0439,MALE,22.0,,84.8,57.6,5.4,no,no,Medium,70.9,Pass
+S0440, female ,22.0,3.8,71.9,87.7,6.4,Yes,Yes,Medium,64.1,Pass
+S0441, female ,18.0,7.2,91.9,50.0,7.2,no,No,Low,61.0,Pass
+S0442,Female,21.0,7.7,79.6,57.4,7.1,Yes,No,Low,69.5,Pass
+S0443, Male ,24.0,8.3,98.5,93.6,9.2,no,Yes,High,83.5,Pass
+S0444,Female,,2.4,57.4,75.4,7.0,Yes,yes,High,57.0,Pass
+S0445, female ,18.0,9.9,83.3,50.7,5.6,yes,yes,Medium,67.3,Pass
+S0446, Male ,23.0,5.7,61.9,,5.8,N,No,High,65.6,Pass
+S0447,Female,21.0,5.1,92.3,51.8,6.5,Yes,,Medium,62.8,Pass
+S0448, female ,20.0,6.0,92.5,51.5,7.7,yes,no,Medium,68.8,Pass
+S0449,male,20.0,9.3,93.3,80.2,7.2,Y,yes,High,91.4,Pass
+S0450,Female,23.0,7.5,58.3,90.9,5.0,yes,Yes,Medium,71.6,Pass
+S0451, Male ,18.0,6.3,76.6,84.9,6.4,N,no,Medium,76.0,Pass
+S0452,Female,20.0,8.3,65.6,50.7,6.2,Y,No,Medium,61.7,Pass
+S0453,female,24.0,4.7,97.7,48.3,5.4,N,no,Medium,67.1,Pass
+S0454,female,18.0,9.1,57.2,95.7,6.1,No,No,Low,81.6,Pass
+S0455,male,20.0,6.2,64.8,73.0,7.6,no,Yes,Medium,60.9,Pass
+S0456,MALE,19.0,7.0,83.3,65.8,8.1,No,yes,Low,66.6,Pass
+S0457,MALE,23.0,2.5,72.7,62.0,5.3,N,yes,Medium,50.8,Pass
+S0458, Male ,23.0,8.1,65.3,53.1,6.1,Yes,Yes,Medium,60.6,Pass
+S0459,FEMALE,23.0,7.2,75.2,80.2,8.4,yes,Yes,Low,69.7,Pass
+S0460,MALE,18.0,4.7,90.3,77.9,8.3,N,No,Medium,64.7,Pass
+S0461, Male ,24.0,7.1,74.7,94.8,7.4,Y,no,High,83.3,Pass
+S0462,male,22.0,2.2,92.7,50.0,6.6,Y,yes,Low,56.1,Pass
+S0463,FEMALE,,9.9,74.7,,8.8,yes,no,Low,72.5,Pass
+S0464,FEMALE,24.0,7.4,60.2,94.7,5.6,Yes,Yes,High,76.9,Pass
+S0465,female,20.0,5.1,76.9,70.8,7.7,yes,No,Low,66.1,Pass
+S0466, female ,19.0,8.0,83.7,48.6,5.2,No,yes,Medium,69.1,Pass
+S0467,FEMALE,18.0,9.7,59.5,43.3,7.9,No,Yes,High,59.0,Pass
+S0468,Male,20.0,5.3,73.1,92.3,4.9,Yes,yes,Medium,76.3,Pass
+S0469, Male ,22.0,1.9,170.0,83.5,8.0,yes,no,Low,90.7,Pass
+S0470,FEMALE,20.0,3.9,55.0,93.2,5.6,No,No,Medium,60.9,Pass
+S0471,FEMALE,24.0,6.0,59.0,92.1,7.4,Y,yes,High,68.8,Pass
+S0472,Male,23.0,6.1,81.6,50.4,5.2,Y,No,Medium,61.6,Pass
+S0473,FEMALE,19.0,6.6,82.2,94.4,8.4,no,yes,Low,73.4,Pass
+S0474, female ,24.0,6.5,68.4,71.5,5.9,yes,no,Medium,62.1,Pass
+S0475,Male,,5.5,77.4,69.4,6.1,Yes,Yes,Low,68.3,Pass
+S0476,female,23.0,5.0,64.1,77.0,8.3,Y,yes,Low,68.5,Pass
+S0477,Female,21.0,8.1,84.5,58.0,5.9,Y,Yes,High,72.8,Pass
+S0478,FEMALE,23.0,6.6,96.8,90.4,6.7,N,no,Medium,81.9,Pass
+S0479,FEMALE,21.0,5.9,71.0,94.4,6.1,No,no,Medium,78.7,Pass
+S0480, Male ,23.0,4.6,57.4,82.7,8.0,Y,No,,62.7,Pass
+S0481, female ,19.0,2.0,64.8,95.7,5.5,N,Yes,Medium,60.3,Pass
+S0482, Male ,24.0,2.7,75.0,78.0,7.1,N,No,Medium,56.9,Pass
+S0483,Female,19.0,5.2,152.0,85.2,8.0,yes,Yes,High,92.7,Pass
+S0484,FEMALE,18.0,9.7,82.3,81.3,7.1,yes,Yes,High,84.8,Pass
+S0485, female ,23.0,2.8,75.8,91.8,7.4,no,yes,Medium,59.7,Pass
+S0486,Male,24.0,9.5,83.9,60.3,9.2,No,No,Medium,69.8,Pass
+S0487,FEMALE,21.0,3.0,86.5,48.1,7.8,yes,no,High,50.8,Pass
+S0488,female,18.0,4.4,60.0,67.9,7.6,yes,No,Medium,54.5,Pass
+S0489,FEMALE,20.0,5.5,88.4,44.2,6.3,No,Yes,Low,52.6,Pass
+S0490,MALE,19.0,3.5,64.8,78.6,8.8,No,Yes,High,53.0,Pass
+S0491, female ,18.0,5.8,70.0,48.3,7.0,No,No,Low,59.9,Pass
+S0492,MALE,24.0,5.7,91.5,43.3,5.7,No,yes,Medium,56.9,Pass
+S0493,Male,19.0,5.4,97.4,75.3,4.8,no,no,Low,67.3,Pass
+S0494,FEMALE,,7.5,67.8,53.9,5.4,N,yes,Low,58.9,Pass
+S0495,Male,20.0,4.4,78.0,61.3,7.8,Y,No,High,60.2,Pass
+S0496,male,20.0,4.3,85.9,59.6,5.8,Yes,No,Medium,57.7,Pass
+S0497,FEMALE,22.0,8.4,57.0,74.8,6.7,No,no,High,66.6,Pass
+S0498,MALE,21.0,2.7,62.2,52.5,8.9,yes,No,Medium,51.9,Pass
+S0499, female ,24.0,8.8,61.2,70.4,4.8,Yes,Yes,,77.1,Pass
+S0500,MALE,22.0,7.1,86.5,84.2,7.6,N,No,Medium,74.7,Pass
+S0501,Male,21.0,7.4,86.7,83.4,7.6,no,no,Medium,81.8,Pass
+S0502,Female,20.0,3.1,59.7,52.6,8.8,Yes,yes,Medium,40.3,Fail
+S0503,FEMALE,18.0,9.9,81.9,46.5,6.2,Yes,No,High,76.5,Pass
+S0504,female,24.0,3.8,63.3,87.9,5.0,Y,yes,High,69.5,Pass
+S0505, Male ,23.0,3.2,95.9,78.6,5.9,Y,yes,High,60.7,Pass
+S0506, female ,19.0,3.1,72.3,,8.7,No,Yes,High,66.5,Pass
+S0507,female,20.0,6.4,75.1,94.7,6.3,yes,no,High,81.8,Pass
+S0508,female,20.0,9.7,89.4,63.3,9.1,No,yes,Medium,85.2,Pass
+S0509,FEMALE,24.0,3.7,86.5,68.5,6.9,Yes,Yes,Medium,61.7,Pass
+S0510,Female,24.0,5.1,59.7,74.6,7.8,No,No,Medium,59.5,Pass
+S0511,FEMALE,18.0,3.3,73.2,69.6,8.7,Yes,yes,High,51.0,Pass
+S0512,Female,24.0,7.1,95.8,45.0,6.8,N,yes,Low,68.7,Pass
+S0513,male,23.0,5.3,91.8,78.0,7.3,N,No,High,66.3,Pass
+S0514, female ,20.0,,80.9,63.5,4.9,yes,No,Medium,52.6,Pass
+S0515,,20.0,6.8,89.0,80.7,5.4,no,Yes,Medium,82.5,Pass
+S0516,Male,18.0,3.4,74.8,65.1,9.0,Yes,No,Medium,52.9,Pass
+S0517,female,24.0,6.7,84.0,62.9,7.1,N,No,Medium,61.6,Pass
+S0518, Male ,20.0,5.0,97.1,42.7,7.8,N,no,,56.6,Pass
+S0519,male,21.0,,60.9,60.6,4.7,N,yes,Low,60.3,Pass
+S0520,Male,21.0,,76.9,58.6,8.8,no,No,Medium,52.3,Pass
+S0521,Male,23.0,8.0,78.3,66.1,5.9,Y,no,Medium,75.5,Pass
+S0522, Male ,,8.4,57.1,72.3,6.8,No,Yes,Medium,64.5,Pass
+S0523, Male ,21.0,2.3,96.2,53.6,8.0,No,Yes,High,55.1,Pass
+S0524,Male,20.0,2.6,91.9,89.9,4.6,N,no,High,71.2,Pass
+S0525,MALE,19.0,9.0,76.2,82.0,7.7,N,Yes,Low,86.3,Pass
+S0526, Male ,21.0,3.3,77.4,64.4,6.2,no,No,Medium,58.7,Pass
+S0527,MALE,6.0,4.5,95.5,65.9,5.9,Y,Yes,Medium,71.0,Pass
+S0528, female ,21.0,5.6,62.8,50.8,9.2,N,No,High,50.5,Pass
+S0529,male,20.0,4.0,80.5,81.3,9.1,N,,Medium,59.9,Pass
+S0530, Male ,24.0,8.9,87.1,90.5,5.8,Y,No,Medium,92.6,Pass
+S0531, female ,22.0,6.1,60.6,81.3,4.8,Y,Yes,Medium,72.4,Pass
+S0532,Female,20.0,7.0,72.0,,5.7,Yes,No,Low,69.2,Pass
+S0533,female,24.0,6.7,81.4,87.1,6.3,Y,No,High,80.4,Pass
+S0534,MALE,18.0,6.8,93.8,74.3,9.2,no,No,Medium,69.1,Pass
+S0535,male,23.0,6.6,77.2,49.8,9.2,no,,Medium,67.7,Pass
+S0536,MALE,21.0,4.7,71.9,58.4,8.9,yes,no,High,63.2,Pass
+S0537,Female,18.0,8.7,98.1,95.4,9.0,N,no,Low,92.1,Pass
+S0538,male,21.0,6.9,95.3,70.4,5.6,No,yes,Low,76.4,Pass
+S0539,Male,,8.5,88.5,60.1,6.1,No,No,Low,68.1,Pass
+S0540,Female,24.0,7.6,67.0,92.4,6.3,N,No,High,78.2,Pass
+S0541,FEMALE,19.0,4.2,97.4,73.9,5.1,yes,No,High,74.6,Pass
+S0542,FEMALE,22.0,6.8,97.7,,7.9,no,no,High,68.9,Pass
+S0543, Male ,20.0,2.5,74.9,42.4,6.9,no,No,Low,38.4,Fail
+S0544,male,20.0,2.9,60.9,76.5,7.7,no,No,Medium,48.6,Fail
+S0545, Male ,18.0,2.8,73.2,56.8,8.6,N,yes,High,50.9,Pass
+S0546,male,18.0,4.3,85.8,51.4,7.7,No,yes,Medium,59.0,Pass
+S0547,Female,20.0,3.3,,67.0,6.5,N,no,High,59.3,Pass
+S0548,male,23.0,7.5,68.2,72.7,7.2,Y,No,Low,67.2,Pass
+S0549,Male,20.0,6.0,85.9,91.4,6.5,N,yes,Low,82.3,Pass
+S0550,female,20.0,5.2,92.9,52.8,6.0,No,no,Medium,68.8,Pass
+S0551,FEMALE,21.0,2.9,86.3,86.9,7.3,yes,,High,59.5,Pass
+S0552,female,22.0,4.9,96.2,57.6,6.6,Y,yes,,57.8,Pass
+S0553,male,23.0,3.3,148.0,68.5,5.1,Yes,no,High,81.5,Pass
+S0554,female,21.0,7.0,63.8,86.4,7.6,Yes,no,Medium,76.8,Pass
+S0555,Male,19.0,7.5,82.5,58.3,7.2,no,No,High,69.0,Pass
+S0556,FEMALE,23.0,7.1,67.8,73.6,7.7,Y,no,Medium,74.0,Pass
+S0557, female ,21.0,10.0,70.2,68.7,5.5,No,no,Low,79.3,Pass
+S0558,male,20.0,6.4,84.6,82.0,5.1,N,no,Medium,78.0,Pass
+S0559,FEMALE,21.0,5.8,98.2,,7.7,N,no,High,66.8,Pass
+S0560,female,18.0,,83.6,84.7,8.7,N,No,Low,58.6,Pass
+S0561, female ,23.0,4.4,,50.3,8.8,yes,no,High,63.7,Pass
+S0562,MALE,24.0,,77.2,58.2,6.5,no,Yes,High,63.5,Pass
+S0563,FEMALE,,2.2,85.5,76.6,8.8,no,no,Low,58.9,Pass
+S0564,MALE,22.0,,69.2,76.4,8.1,Y,no,High,62.0,Pass
+S0565,Female,21.0,1.9,,48.7,7.6,yes,Yes,Medium,36.2,Fail
+S0566, female ,20.0,2.9,70.5,78.0,7.2,Yes,yes,Low,57.5,Pass
+S0567, female ,23.0,8.5,76.1,57.5,5.2,no,No,Low,75.1,Pass
+S0568,FEMALE,,9.7,80.1,51.7,4.8,no,No,High,78.9,Pass
+S0569,Female,18.0,,,91.0,7.0,Y,yes,Low,74.6,Pass
+S0570,female,18.0,5.9,73.4,76.8,7.9,no,no,High,63.7,Pass
+S0571, Male ,23.0,7.4,87.9,43.5,5.4,Y,no,Low,63.2,Pass
+S0572,male,23.0,5.2,92.0,,8.4,N,yes,High,67.3,Pass
+S0573,Female,21.0,8.7,155.0,68.6,5.2,yes,no,High,92.7,Pass
+S0574, female ,,5.8,92.3,94.4,4.6,Yes,yes,Medium,80.9,Pass
+S0575, Male ,22.0,2.5,90.6,74.3,6.0,Yes,no,High,57.5,Pass
+S0576, female ,24.0,2.1,78.0,61.5,9.1,no,no,Medium,55.2,Pass
+S0577,FEMALE,23.0,8.0,56.1,67.9,9.0,no,Yes,High,71.7,Pass
+S0578,female,23.0,4.2,61.4,65.5,5.9,Y,yes,Medium,59.2,Pass
+S0579,Male,19.0,4.1,84.5,55.9,8.0,yes,No,High,58.6,Pass
+S0580, female ,18.0,6.2,63.8,79.0,8.4,Y,no,Medium,74.0,Pass
+S0581,female,19.0,3.2,88.0,94.6,7.5,N,No,Low,63.7,Pass
+S0582,MALE,24.0,5.6,62.1,86.2,8.0,No,No,High,70.6,Pass
+S0583, female ,,7.9,67.6,62.2,5.2,no,No,Medium,71.4,Pass
+S0584, Male ,23.0,8.1,66.0,81.6,5.4,Yes,Yes,High,68.7,Pass
+S0585,female,24.0,6.3,91.9,42.9,5.1,N,Yes,Low,56.3,Pass
+S0586,Female,21.0,2.7,85.4,56.0,4.6,Yes,yes,High,49.1,Fail
+S0587,female,18.0,2.7,68.0,73.4,9.1,Y,no,Medium,48.9,Fail
+S0588,Female,19.0,8.2,88.2,,7.4,Y,no,Low,67.0,Pass
+S0589,Female,18.0,8.6,56.4,66.9,7.3,N,no,High,70.0,Pass
+S0590,Male,19.0,4.8,90.8,79.4,7.4,no,no,Medium,66.9,Pass
+S0591, Male ,24.0,8.5,59.5,61.3,7.3,Y,yes,Medium,63.4,Pass
+S0592,male,23.0,2.1,93.2,,5.6,Yes,no,High,51.2,Pass
+S0593, Male ,20.0,7.7,87.5,61.5,4.6,Yes,no,Low,71.4,Pass
+S0594,FEMALE,20.0,6.3,93.1,76.4,4.9,N,yes,High,69.3,Pass
+S0595,,21.0,9.9,87.7,93.6,8.2,Yes,Yes,Medium,84.9,Pass
+S0596, Male ,22.0,2.6,79.7,44.6,5.1,No,no,Medium,43.8,Fail
+S0597, female ,18.0,8.6,65.5,57.7,8.5,Y,Yes,Medium,67.5,Pass
+S0598, female ,22.0,46.5,89.5,76.5,6.7,no,Yes,Low,100.0,Pass
+S0599, female ,19.0,4.2,90.1,46.1,7.6,N,no,Low,59.1,Pass
+S0600,Male,23.0,10.0,67.7,52.5,5.4,Yes,No,Medium,67.9,Pass
+S0601,male,21.0,5.5,84.2,75.9,6.3,No,No,Medium,75.3,Pass
+S0602,Female,20.0,4.7,95.8,83.3,6.7,Y,no,Medium,69.1,Pass
+S0603, Male ,20.0,8.5,72.1,74.3,5.3,yes,yes,Medium,77.8,Pass
+S0604,FEMALE,21.0,35.5,97.1,51.0,5.6,N,yes,High,100.0,Pass
+S0605, Male ,79.0,10.0,97.9,,6.4,no,no,High,84.9,Pass
+S0606,Female,18.0,8.2,68.8,59.1,9.1,no,yes,High,64.2,Pass
+S0607,female,22.0,3.7,79.3,87.6,8.8,N,Yes,High,69.1,Pass
+S0608, female ,19.0,8.4,55.6,85.2,9.0,N,no,High,191.0,Pass
+S0609,female,22.0,6.6,66.1,56.7,5.5,N,no,Medium,57.3,Pass
+S0610,FEMALE,20.0,4.7,82.3,79.7,7.7,no,No,Medium,70.7,Pass
+S0611,female,21.0,7.6,89.4,61.6,5.5,no,No,High,72.0,Pass
+S0612,female,20.0,7.0,93.3,70.9,5.5,yes,no,High,68.5,Pass
+S0613, female ,23.0,3.2,91.5,61.0,5.3,Y,Yes,High,64.3,Pass
+S0614,Female,20.0,2.9,95.1,49.8,9.0,Y,yes,High,57.4,Pass
+S0615,Female,19.0,3.5,86.0,49.4,6.6,Y,Yes,,55.4,Pass
+S0616,Female,18.0,3.5,83.5,57.2,7.4,N,No,,52.9,Pass
+S0617, Male ,18.0,2.3,88.2,84.1,7.7,N,yes,Medium,59.6,Pass
+S0618,male,23.0,4.7,79.1,64.2,8.6,no,no,Medium,56.0,Pass
+S0619, Male ,19.0,4.1,81.5,91.7,8.7,N,No,Medium,77.0,Pass
+S0620,female,,6.2,89.2,50.8,6.5,yes,yes,High,59.7,Pass
+S0621,male,22.0,4.5,97.4,53.8,8.1,N,No,High,65.1,Pass
+S0622,MALE,21.0,7.6,67.9,69.2,7.4,No,No,Low,64.8,Pass
+S0623, Male ,22.0,4.2,62.8,86.9,8.4,no,Yes,Medium,61.8,Pass
+S0624, Male ,18.0,4.0,85.0,84.9,7.9,N,Yes,High,72.9,Pass
+S0625, female ,20.0,8.8,63.2,72.2,6.4,yes,Yes,Medium,67.4,Pass
+S0626,Female,24.0,9.9,62.6,79.2,8.9,Yes,no,Low,85.0,Pass
+S0627,Female,,7.4,77.6,93.4,7.2,Y,no,Low,82.9,Pass
+S0628,male,23.0,2.6,71.6,87.7,7.0,no,,Medium,63.5,Pass
+S0629, Male ,21.0,9.7,73.9,80.5,7.5,no,No,High,80.7,Pass
+S0630,Female,19.0,8.2,79.5,79.9,7.8,yes,no,High,72.6,Pass
+S0631, Male ,22.0,9.3,60.7,,4.7,Y,No,Low,78.2,Pass
+S0632,female,20.0,9.9,80.7,64.5,5.0,No,no,Medium,71.3,Pass
+S0633,MALE,23.0,8.9,66.2,91.5,6.6,Yes,yes,Low,77.8,Pass
+S0634,Female,21.0,2.8,69.5,48.3,8.6,yes,yes,Medium,44.9,Fail
+S0635,Male,19.0,8.9,86.2,49.1,8.6,N,no,High,75.0,Pass
+S0636,MALE,18.0,,61.8,,5.7,No,yes,Medium,39.6,Fail
+S0637,Female,19.0,7.6,61.8,60.8,7.0,No,no,High,60.9,Pass
+S0638,Male,24.0,8.6,,79.3,9.1,Yes,Yes,Medium,77.7,Pass
+S0639,Male,,,57.2,49.5,4.7,Yes,Yes,Low,59.6,Pass
+S0640,Female,21.0,7.3,96.0,65.9,6.3,Yes,yes,High,79.6,Pass
+S0641,MALE,19.0,5.8,82.1,95.3,8.1,No,No,High,75.6,Pass
+S0642, female ,23.0,6.5,84.1,70.2,9.0,yes,yes,High,64.0,Pass
+S0643,male,21.0,4.0,76.6,94.4,5.4,No,No,High,65.6,Pass
+S0644,Male,18.0,5.2,,51.3,6.6,yes,no,Low,53.7,Pass
+S0645,Female,24.0,5.5,70.8,58.5,8.7,No,yes,Low,58.1,Pass
+S0646, female ,23.0,7.0,89.5,82.2,8.1,Yes,Yes,Medium,71.7,Pass
+S0647, female ,24.0,9.0,69.0,,5.8,Y,No,Medium,62.9,Pass
+S0648, female ,20.0,2.6,64.7,49.0,5.3,N,no,High,45.4,Fail
+S0649,female,23.0,6.0,,79.5,5.9,no,Yes,Medium,64.3,Pass
+S0650,MALE,20.0,,58.0,79.2,8.8,No,Yes,High,52.4,Pass
+S0651,Male,,9.5,77.2,,7.7,no,Yes,Medium,74.9,Pass
+S0652,Female,18.0,4.8,73.3,53.3,8.7,no,no,Medium,61.2,Pass
+S0653, female ,22.0,9.6,78.6,95.0,6.7,no,no,Low,93.8,Pass
+S0654,male,22.0,4.5,59.0,64.9,7.5,No,yes,High,60.8,Pass
+S0655,male,20.0,1.8,64.7,83.2,4.9,Y,no,Medium,59.7,Pass
+S0656,FEMALE,20.0,8.1,64.4,48.0,6.9,no,No,Low,62.7,Pass
+S0657, female ,24.0,7.8,69.6,43.0,5.3,No,No,High,63.6,Pass
+S0658,male,19.0,7.8,70.9,68.1,7.3,N,yes,High,67.7,Pass
+S0659,Male,23.0,5.6,64.6,65.3,8.7,No,No,Medium,64.9,Pass
+S0660,MALE,23.0,7.2,88.1,52.6,7.1,No,No,Medium,66.1,Pass
+S0661,MALE,23.0,4.7,78.3,43.8,6.3,N,,High,52.1,Pass
+S0662,Female,23.0,2.3,98.9,77.6,6.0,No,,Medium,67.5,Pass
+S0663,male,,6.2,91.2,74.0,4.6,N,No,Medium,76.2,Pass
+S0664, Male ,24.0,3.6,98.2,67.3,6.6,No,Yes,High,58.0,Pass
+S0665,male,20.0,5.3,55.4,91.1,8.7,yes,no,High,61.1,Pass
+S0666,FEMALE,22.0,3.5,84.4,44.3,8.7,yes,No,High,49.7,Fail
+S0667, Male ,19.0,4.0,74.6,58.3,8.6,no,No,High,58.5,Pass
+S0668,FEMALE,18.0,8.6,94.8,42.6,4.9,yes,No,High,71.9,Pass
+S0669, female ,19.0,4.6,82.0,47.2,6.0,No,Yes,Low,60.2,Pass
+S0670, female ,,6.5,82.3,48.7,7.5,N,No,Medium,67.8,Pass
+S0671,Female,19.0,6.4,97.2,74.5,7.8,No,No,High,74.9,Pass
+S0672,FEMALE,101.0,5.8,85.0,73.7,5.3,yes,yes,Medium,70.8,Pass
+S0673,Female,24.0,,69.1,52.8,7.9,N,no,High,54.6,Pass
+S0674,Male,21.0,7.4,95.3,78.2,4.9,no,no,Low,79.6,Pass
+S0675,male,18.0,2.2,96.6,43.6,7.8,no,Yes,High,45.7,Fail
+S0676, Male ,20.0,2.6,72.0,49.9,7.5,Yes,No,Low,45.5,Fail
+S0677,,,8.2,78.8,82.3,4.9,N,Yes,Medium,82.2,Pass
+S0678,Female,,5.6,67.4,57.0,7.8,yes,yes,High,63.8,Pass
+S0679,male,20.0,2.8,95.1,73.3,7.9,No,Yes,Low,58.0,Pass
+S0680,MALE,21.0,8.8,91.2,61.0,9.1,No,no,Medium,69.2,Pass
+S0681, Male ,24.0,5.4,71.5,88.2,7.4,Yes,Yes,Low,74.5,Pass
+S0682,MALE,22.0,1.8,,84.2,5.3,N,yes,High,69.2,Pass
+S0683,male,19.0,9.7,74.6,75.1,7.1,yes,Yes,Medium,73.7,Pass
+S0684,MALE,22.0,3.5,56.9,69.3,4.7,no,yes,Medium,49.6,Fail
+S0685,Male,18.0,7.4,94.5,45.7,5.3,Y,Yes,High,67.4,Pass
+S0686,FEMALE,18.0,2.9,63.5,86.3,6.1,Yes,,Medium,57.3,Pass
+S0687, female ,20.0,7.1,77.6,83.2,8.6,no,no,Low,73.9,Pass
+S0688, female ,21.0,3.1,96.7,70.6,8.6,No,no,Medium,65.1,Pass
+S0689,Female,23.0,9.4,62.4,80.7,5.3,Yes,Yes,Medium,75.3,Pass
+S0690,Male,23.0,4.0,97.1,94.1,5.2,Yes,,Medium,77.6,Pass
+S0691, Male ,91.0,7.2,78.7,51.3,8.1,Y,Yes,Low,67.8,Pass
+S0692,Female,22.0,3.9,55.3,82.7,4.7,no,yes,,63.3,Pass
+S0693,Female,21.0,4.8,57.9,42.2,5.9,Y,Yes,Medium,48.6,Fail
+S0694, female ,24.0,9.2,84.5,81.2,7.9,Yes,Yes,Medium,77.8,Pass
+S0695,male,21.0,3.2,89.0,91.9,9.0,no,Yes,High,70.7,Pass
+S0696, Male ,24.0,5.1,93.1,91.7,5.9,yes,No,Medium,74.2,Pass
+S0697,Female,22.0,4.3,73.7,88.0,5.3,Yes,Yes,Low,64.1,Pass
+S0698, Male ,18.0,7.5,59.6,67.6,8.7,Y,no,Low,61.1,Pass
+S0699,FEMALE,19.0,3.7,78.7,79.7,9.0,Y,yes,Medium,63.3,Pass
+S0700,male,20.0,7.2,,52.0,4.5,Y,no,Low,65.3,Pass
+S0701, Male ,23.0,7.6,98.0,78.4,8.1,Y,,Medium,80.3,Pass
+S0702,MALE,18.0,1.8,89.1,47.8,4.6,Y,yes,Medium,55.2,Pass
+S0703,Female,21.0,5.7,83.4,87.1,6.8,No,no,Medium,73.8,Pass
+S0704,MALE,21.0,2.9,96.3,95.0,6.8,Yes,yes,Medium,76.9,Pass
+S0705,male,23.0,3.7,87.9,64.9,8.3,yes,yes,High,56.8,Pass
+S0706,Male,22.0,7.4,61.8,69.8,7.4,yes,yes,Low,60.6,Pass
+S0707,MALE,,1.9,75.2,64.0,6.8,no,yes,High,57.4,Pass
+S0708,Female,19.0,7.5,69.6,83.1,5.5,No,No,High,71.2,Pass
+S0709,Female,24.0,,58.9,59.0,7.6,Yes,yes,High,66.8,Pass
+S0710, female ,24.0,9.9,57.4,67.2,6.6,Y,no,Medium,69.7,Pass
+S0711,male,22.0,5.3,89.9,,6.6,Y,no,Medium,62.1,Pass
+S0712, female ,23.0,2.9,79.6,68.8,7.3,yes,Yes,Medium,52.9,Pass
+S0713,Female,22.0,2.4,80.3,61.5,4.5,yes,yes,Low,57.0,Pass
+S0714,FEMALE,19.0,,65.0,57.6,8.6,N,yes,High,52.1,Pass
+S0715,Female,24.0,7.8,66.4,,5.8,No,Yes,Medium,78.7,Pass
+S0716, female ,19.0,2.6,72.1,46.4,7.5,Yes,Yes,Low,40.7,Fail
+S0717, female ,21.0,4.4,82.7,68.7,8.4,Yes,no,High,64.7,Pass
+S0718,male,,9.0,74.1,62.8,5.5,no,no,Medium,67.6,Pass
+S0719,Male,24.0,2.9,,66.7,5.4,Y,No,Medium,51.6,Pass
+S0720,FEMALE,18.0,8.1,84.6,81.8,4.8,Yes,Yes,Medium,73.6,Pass
+S0721,female,24.0,8.0,78.5,79.1,6.1,Yes,Yes,Medium,71.4,Pass
+S0722,Female,18.0,2.9,83.2,87.4,5.2,No,yes,High,59.0,Pass
+S0723,Male,22.0,9.9,82.2,54.2,4.7,No,No,High,76.9,Pass
+S0724,male,19.0,3.0,88.3,64.0,7.2,no,yes,Low,63.4,Pass
+S0725, Male ,20.0,6.2,80.8,95.2,7.3,Y,no,High,79.1,Pass
+S0726,Male,19.0,1.9,85.8,65.1,6.1,no,no,Medium,48.2,Fail
+S0727,Female,19.0,7.1,58.2,88.3,4.9,No,no,Low,74.9,Pass
+S0728,Male,20.0,,95.8,,5.0,Y,No,High,71.7,Pass
+S0729,MALE,23.0,7.7,59.7,85.3,9.2,No,Yes,Medium,76.0,Pass
+S0730, female ,19.0,7.0,89.6,92.7,5.3,No,yes,Medium,78.6,Pass
+S0731, female ,20.0,3.0,68.3,61.8,5.8,N,Yes,Medium,48.5,Fail
+S0732,Female,22.0,5.2,58.8,42.7,7.6,no,yes,Low,51.3,Pass
+S0733,MALE,20.0,7.4,88.7,78.4,7.8,yes,Yes,Medium,82.6,Pass
+S0734,FEMALE,24.0,8.9,74.3,78.3,7.2,yes,,Low,76.1,Pass
+S0735, female ,18.0,2.5,72.4,63.4,7.1,no,,Medium,55.2,Pass
+S0736,male,20.0,2.6,84.1,70.2,9.0,N,No,High,59.7,Pass
+S0737, female ,19.0,8.0,75.9,78.5,8.0,No,no,High,73.8,Pass
+S0738,female,23.0,6.6,78.5,48.4,6.2,No,no,Medium,54.9,Pass
+S0739,FEMALE,22.0,32.0,61.0,63.3,4.7,N,Yes,Low,100.0,Pass
+S0740,female,20.0,,72.2,79.5,8.1,No,yes,Medium,80.7,Pass
+S0741,female,19.0,4.4,90.1,94.8,6.0,yes,no,Low,71.2,Pass
+S0742,male,23.0,2.9,79.0,82.0,8.7,N,no,High,59.8,Pass
+S0743,MALE,20.0,4.1,97.2,90.2,8.4,Y,Yes,Medium,72.4,Pass
+S0744,female,22.0,2.5,61.3,51.1,8.1,Yes,no,Low,48.8,Fail
+S0745,FEMALE,22.0,6.3,84.8,,8.5,no,yes,High,65.5,Pass
+S0746, female ,18.0,6.7,95.2,52.8,4.8,N,No,Medium,69.5,Pass
+S0747,Female,22.0,6.8,90.0,52.8,6.7,no,No,Medium,71.6,Pass
+S0748,FEMALE,23.0,8.2,87.1,87.6,5.1,No,Yes,High,78.1,Pass
+S0749,Male,19.0,,71.4,63.8,8.5,No,No,Medium,65.1,Pass
+S0750, female ,22.0,8.8,96.8,54.6,6.0,yes,no,High,79.2,Pass
+S0751,male,22.0,7.2,,64.9,6.4,No,Yes,Medium,66.9,Pass
+S0752,female,19.0,4.3,79.4,69.0,5.5,Y,yes,Low,60.5,Pass
+S0753,Female,,6.0,60.4,83.3,5.5,no,no,Low,69.3,Pass
+S0754,female,23.0,6.0,55.2,83.4,4.8,Yes,No,Medium,65.3,Pass
+S0755,male,22.0,7.9,81.3,74.1,7.2,N,no,High,82.0,Pass
+S0756,FEMALE,23.0,,78.6,82.8,9.1,No,Yes,High,68.2,Pass
+S0757,Male,22.0,2.2,,85.3,7.0,N,no,Medium,61.6,Pass
+S0758, female ,20.0,9.2,68.4,92.9,4.9,Y,No,Medium,76.6,Pass
+S0759,FEMALE,24.0,9.6,87.9,61.2,7.9,N,No,High,83.7,Pass
+S0760,Male,22.0,5.9,94.8,78.0,7.3,Yes,No,Medium,80.2,Pass
+S0761,,18.0,2.7,70.1,93.3,8.2,yes,No,Medium,56.8,Pass
+S0762,female,24.0,5.9,73.2,95.3,7.8,N,Yes,Medium,76.5,Pass
+S0763, female ,24.0,6.7,83.4,69.6,6.5,Yes,,High,74.9,Pass
+S0764, female ,18.0,6.1,77.6,50.0,8.5,no,no,Medium,59.8,Pass
+S0765,Male,18.0,9.8,62.1,66.6,5.7,N,Yes,,77.0,Pass
+S0766, Male ,18.0,9.9,64.7,48.6,7.2,N,No,High,67.4,Pass
+S0767,Female,23.0,,91.7,68.4,7.4,Y,yes,High,82.3,Pass
+S0768,MALE,24.0,2.9,63.6,,8.9,no,no,Medium,45.3,Fail
+S0769,Female,22.0,8.9,63.0,92.9,7.4,N,yes,Low,76.5,Pass
+S0770, female ,20.0,6.5,90.2,43.6,6.8,Yes,No,High,66.6,Pass
+S0771, female ,23.0,4.8,92.5,81.8,7.9,N,yes,High,65.3,Pass
+S0772,male,19.0,7.4,92.5,86.8,6.8,no,no,Medium,85.0,Pass
+S0773,Male,,8.1,96.0,68.9,8.3,Yes,Yes,Low,76.5,Pass
+S0774, Male ,22.0,9.6,98.7,43.4,8.7,yes,,High,80.9,Pass
+S0775,MALE,21.0,8.1,75.3,51.7,5.6,no,no,High,59.9,Pass
+S0776,Female,22.0,1.9,79.2,74.6,5.9,no,Yes,Medium,50.5,Pass
+S0777,Male,23.0,2.4,67.8,,5.4,no,yes,High,55.2,Pass
+S0778,FEMALE,18.0,3.9,58.0,58.3,5.1,Yes,No,High,46.6,Fail
+S0779,male,21.0,2.1,59.3,75.7,6.7,no,Yes,Low,51.9,Pass
+S0780, Male ,23.0,2.3,86.9,83.0,8.2,no,yes,Medium,64.0,Pass
+S0781,male,22.0,8.3,76.4,77.7,8.0,yes,no,Medium,77.3,Pass
+S0782, female ,20.0,6.0,69.6,70.1,5.5,No,no,Medium,63.6,Pass
+S0783,male,23.0,7.0,60.6,68.6,7.4,no,no,Medium,68.0,Pass
+S0784,MALE,20.0,,83.8,67.2,6.4,Yes,No,High,72.2,Pass
+S0785, female ,,5.2,59.4,57.9,4.7,Yes,No,Low,55.1,Pass
+S0786,Female,19.0,7.6,82.3,68.9,6.1,N,yes,Medium,66.5,Pass
+S0787,Female,24.0,2.5,94.6,69.3,8.3,no,Yes,High,60.2,Pass
+S0788,FEMALE,24.0,6.2,69.0,71.3,5.5,yes,yes,High,66.0,Pass
+S0789, female ,23.0,6.9,74.8,85.7,7.5,Yes,Yes,Low,74.1,Pass
+S0790, female ,,4.1,82.1,,7.7,Y,Yes,Medium,59.5,Pass
+S0791, Male ,20.0,4.3,68.4,43.0,5.7,yes,Yes,Medium,53.5,Pass
+S0792, female ,21.0,6.0,80.7,83.3,4.8,yes,yes,Medium,70.0,Pass
+S0793,MALE,18.0,3.5,79.9,95.5,5.9,N,No,High,65.9,Pass
+S0794,FEMALE,23.0,8.4,71.0,89.5,7.1,no,Yes,Low,76.3,Pass
+S0795, Male ,18.0,6.2,68.9,48.4,8.1,No,yes,Low,60.7,Pass
+S0796,MALE,19.0,5.0,73.8,66.3,5.0,Yes,No,Medium,59.4,Pass
+S0797,male,21.0,7.0,55.2,88.1,6.1,no,yes,Medium,70.0,Pass
+S0798,Female,21.0,8.6,65.8,65.9,6.4,no,no,Medium,73.6,Pass
+S0799,FEMALE,21.0,7.4,64.7,43.9,7.2,Y,Yes,High,52.4,Pass
+S0800,female,21.0,2.3,87.6,51.6,9.0,No,yes,Medium,47.6,Fail
+S0801,Female,19.0,7.5,74.2,77.6,8.4,no,Yes,High,76.8,Pass
+S0802,Male,20.0,7.8,92.0,84.1,5.4,Yes,No,Medium,87.2,Pass
+S0803,Female,22.0,8.7,60.9,89.8,8.4,No,no,Medium,76.2,Pass
+S0804,Female,19.0,2.3,87.3,50.9,8.8,Yes,no,High,48.8,Fail
+S0805, female ,20.0,2.5,93.6,65.3,6.8,Y,yes,Medium,58.9,Pass
+S0806,MALE,,5.4,75.4,58.9,6.7,No,yes,Medium,66.0,Pass
+S0807, female ,23.0,5.5,70.8,63.0,4.7,yes,No,High,63.0,Pass
+S0808, female ,20.0,6.8,68.4,83.3,5.1,No,No,Low,73.4,Pass
+S0809,female,23.0,4.3,79.3,72.7,5.2,Yes,Yes,High,62.4,Pass
+S0810,female,24.0,7.9,62.7,68.5,6.7,no,no,High,66.9,Pass
+S0811,FEMALE,20.0,7.9,81.7,71.9,8.6,Y,Yes,Low,75.7,Pass
+S0812, female ,21.0,2.8,92.0,71.1,8.7,No,no,High,66.0,Pass
+S0813,female,19.0,7.6,92.8,67.4,6.7,Y,yes,High,69.9,Pass
+S0814, Male ,24.0,7.6,61.2,72.4,8.3,Yes,No,High,68.7,Pass
+S0815, Male ,20.0,3.1,78.7,50.4,8.9,Yes,yes,Low,54.7,Pass
+S0816,FEMALE,22.0,,66.6,45.0,4.8,Yes,No,Medium,64.2,Pass
+S0817, Male ,22.0,6.1,94.0,56.2,6.9,no,no,Medium,67.8,Pass
+S0818,FEMALE,18.0,8.2,58.4,73.9,7.2,yes,no,,188.0,Pass
+S0819,Male,20.0,7.7,58.3,62.4,7.7,Y,No,Medium,60.5,Pass
+S0820,female,19.0,3.2,55.8,78.5,7.1,yes,yes,High,52.4,Pass
+S0821, female ,21.0,2.8,140.0,83.4,4.6,yes,No,,77.0,Pass
+S0822,FEMALE,18.0,8.2,56.4,57.4,7.2,Y,Yes,,57.2,Pass
+S0823,FEMALE,20.0,4.0,80.6,45.3,6.1,Yes,yes,Medium,51.1,Pass
+S0824,MALE,21.0,9.1,72.8,73.9,8.8,yes,yes,High,83.4,Pass
+S0825, female ,19.0,8.1,81.0,48.9,8.2,Y,Yes,High,67.4,Pass
+S0826,Male,,2.0,,61.8,4.8,No,yes,Low,58.1,Pass
+S0827,MALE,18.0,8.4,79.3,85.7,5.2,N,no,Medium,84.6,Pass
+S0828,female,18.0,4.0,78.9,73.5,8.5,yes,No,Medium,68.0,Pass
+S0829,male,20.0,2.3,98.9,83.3,6.1,Yes,no,Medium,71.7,Pass
+S0830, female ,21.0,7.6,75.8,75.8,6.3,no,yes,High,66.8,Pass
+S0831,male,99.0,6.5,89.1,62.6,7.0,Y,no,Medium,63.6,Pass
+S0832, female ,22.0,2.4,71.1,65.1,5.3,yes,Yes,High,48.8,Fail
+S0833,Male,21.0,5.5,64.8,95.6,7.3,Yes,yes,High,72.3,Pass
+S0834,MALE,19.0,4.8,89.0,64.2,5.4,N,No,Medium,70.2,Pass
+S0835,FEMALE,24.0,5.9,87.3,45.0,5.0,Yes,No,High,63.2,Pass
+S0836,MALE,19.0,6.4,67.8,55.2,8.2,Y,No,Medium,54.6,Pass
+S0837,male,24.0,4.8,75.4,54.7,5.9,No,Yes,Medium,50.3,Pass
+S0838, female ,20.0,3.9,77.5,58.9,8.5,Yes,No,High,55.2,Pass
+S0839,Female,22.0,2.6,,46.6,7.8,Y,no,Medium,48.7,Fail
+S0840,female,23.0,6.5,77.1,79.2,5.8,yes,no,High,78.7,Pass
+S0841,FEMALE,20.0,7.7,84.2,88.9,4.9,No,yes,High,76.1,Pass
+S0842,male,19.0,3.7,92.3,48.2,8.6,Y,No,Low,60.8,Pass
+S0843,female,24.0,6.0,90.5,51.2,6.2,Y,Yes,Low,69.3,Pass
+S0844,FEMALE,19.0,2.2,82.0,71.1,8.4,No,no,Low,62.5,Pass
+S0845,female,21.0,8.9,62.3,44.0,5.9,Yes,yes,Low,59.7,Pass
+S0846, female ,22.0,3.8,77.6,77.5,7.0,Yes,no,Low,61.6,Pass
+S0847,Male,21.0,5.7,74.6,64.8,5.3,yes,no,High,64.0,Pass
+S0848,male,21.0,4.9,62.9,,6.3,yes,yes,Medium,62.3,Pass
+S0849, Male ,20.0,3.0,96.7,64.7,4.7,no,no,Low,55.6,Pass
+S0850,Female,21.0,9.4,84.0,43.1,5.4,no,no,Medium,74.6,Pass
+S0851, Male ,18.0,8.8,97.6,67.4,4.9,yes,Yes,High,85.8,Pass
+S0852,male,18.0,6.3,87.4,43.2,6.9,No,yes,High,61.7,Pass
+S0853,FEMALE,,9.3,,59.1,8.3,no,yes,Low,74.3,Pass
+S0854,male,22.0,7.9,70.8,72.8,8.8,no,No,Medium,78.9,Pass
+S0855,male,21.0,5.2,64.6,59.4,5.2,No,no,High,50.4,Pass
+S0856, female ,19.0,4.4,76.5,47.3,6.1,Yes,Yes,High,56.4,Pass
+S0857,MALE,19.0,5.2,57.8,68.4,6.8,Y,No,Low,189.0,Pass
+S0858,Female,22.0,7.7,71.3,79.3,8.6,Yes,yes,High,73.3,Pass
+S0859,Male,20.0,4.0,56.9,53.1,6.0,Y,Yes,Medium,47.2,Fail
+S0860,Male,18.0,2.4,,68.8,6.0,No,yes,Medium,50.8,Pass
+S0861,female,18.0,4.9,94.9,85.8,8.1,no,no,Medium,79.1,Pass
+S0862,Male,20.0,5.9,70.9,78.0,5.0,No,No,Medium,64.8,Pass
+S0863,Female,21.0,9.2,75.7,51.0,9.1,Yes,No,,68.8,Pass
+S0864,female,22.0,3.3,75.0,58.2,6.9,No,,Medium,48.2,Fail
+S0865,female,24.0,8.4,57.0,94.3,9.2,Yes,no,Low,73.4,Pass
+S0866,FEMALE,23.0,9.8,98.1,52.9,5.5,No,yes,Medium,81.7,Pass
+S0867,MALE,23.0,9.6,69.3,76.3,4.7,N,No,Medium,84.0,Pass
+S0868, Male ,21.0,2.4,86.0,94.6,6.3,yes,No,Low,73.6,Pass
+S0869,FEMALE,20.0,,77.9,46.1,8.6,Yes,No,High,50.9,Pass
+S0870,MALE,22.0,4.1,91.5,87.9,5.0,Y,No,Medium,77.3,Pass
+S0871,MALE,18.0,8.7,91.7,53.6,6.0,no,Yes,Medium,74.3,Pass
+S0872,MALE,,4.5,66.6,56.3,4.7,no,yes,Medium,52.2,Pass
+S0873,male,,6.3,79.0,58.1,8.5,N,Yes,,65.8,Pass
+S0874,FEMALE,21.0,1.9,62.6,73.0,8.6,Yes,No,High,49.5,Fail
+S0875, Male ,19.0,3.4,83.8,85.4,6.1,yes,no,Medium,65.6,Pass
+S0876, female ,86.0,42.0,71.1,75.7,8.7,no,no,High,100.0,Pass
+S0877,MALE,23.0,4.3,83.7,93.7,5.0,N,No,High,73.6,Pass
+S0878, Male ,20.0,6.9,91.8,80.8,8.1,yes,Yes,High,84.0,Pass
+S0879, female ,24.0,5.6,77.7,73.2,8.0,Y,Yes,High,61.3,Pass
+S0880,Female,21.0,6.7,71.6,74.0,4.6,no,yes,High,66.1,Pass
+S0881, female ,20.0,5.8,94.9,56.8,8.1,No,no,Medium,63.9,Pass
+S0882,Female,18.0,8.1,77.7,72.6,7.5,No,No,Medium,75.4,Pass
+S0883,Male,21.0,3.4,70.5,70.7,5.5,Yes,Yes,Low,62.7,Pass
+S0884, female ,18.0,9.2,93.2,65.1,5.4,N,Yes,Medium,80.5,Pass
+S0885,Female,22.0,8.0,76.4,60.8,5.8,no,yes,Low,74.1,Pass
+S0886,MALE,22.0,3.8,162.0,46.1,7.0,yes,no,Low,73.6,Pass
+S0887,male,19.0,1.9,81.6,86.5,8.1,yes,No,Low,59.1,Pass
+S0888, female ,20.0,5.2,77.1,69.3,7.7,Y,no,Medium,61.5,Pass
+S0889,female,22.0,3.7,61.1,,5.8,no,No,High,46.2,Fail
+S0890,Female,20.0,4.6,62.3,77.8,5.2,yes,Yes,High,56.3,Pass
+S0891,FEMALE,18.0,8.7,58.4,58.9,5.0,yes,Yes,,70.1,Pass
+S0892,Female,21.0,,83.3,64.4,9.0,no,No,High,79.0,Pass
+S0893, female ,22.0,9.6,64.3,55.6,7.1,No,no,High,75.7,Pass
+S0894,Female,21.0,1.8,63.2,69.8,5.0,no,no,Medium,45.7,Fail
+S0895, Male ,24.0,7.2,70.9,78.3,7.0,No,yes,High,72.2,Pass
+S0896,FEMALE,22.0,,86.6,71.6,7.1,Yes,No,Medium,79.8,Pass
+S0897, female ,20.0,7.8,60.2,89.6,5.8,Yes,no,Medium,76.7,Pass
+S0898,male,24.0,2.7,65.1,75.9,8.9,No,Yes,High,49.8,Fail
+S0899, Male ,22.0,6.1,90.7,69.9,8.3,no,no,Medium,67.9,Pass
+S0900,FEMALE,23.0,3.8,86.7,52.1,7.2,Y,no,,50.5,Pass
+S0901,female,,5.8,76.2,,5.3,N,yes,High,62.4,Pass
+S0902,Female,18.0,2.3,76.1,77.7,6.0,yes,no,Medium,57.1,Pass
+S0903,Female,19.0,10.0,64.3,86.5,8.7,Yes,yes,Low,87.3,Pass
+S0904,Male,18.0,7.6,62.1,92.7,7.0,Yes,Yes,High,73.2,Pass
+S0905,FEMALE,21.0,,91.7,56.5,4.7,No,Yes,Medium,61.1,Pass
+S0906,Female,20.0,,56.0,76.4,4.6,Y,Yes,Medium,80.7,Pass
+S0907,Male,24.0,9.2,56.9,85.7,8.7,no,Yes,Medium,80.6,Pass
+S0908,Male,20.0,6.1,80.2,88.0,4.7,Y,Yes,Medium,80.7,Pass
+S0909, female ,22.0,7.5,,91.0,6.3,N,no,Medium,77.5,Pass
+S0910,Female,20.0,4.9,82.7,92.5,4.9,No,No,High,68.5,Pass
+S0911, Male ,24.0,9.8,56.7,81.2,6.3,Y,Yes,High,73.0,Pass
+S0912,female,19.0,2.5,80.2,45.2,7.8,N,no,Medium,52.1,Pass
+S0913, Male ,19.0,2.6,57.5,52.8,8.7,yes,yes,Medium,47.8,Fail
+S0914, Male ,22.0,2.9,66.4,67.0,7.5,no,Yes,Medium,46.4,Fail
+S0915,Female,22.0,8.5,62.9,55.0,7.7,no,No,Low,70.5,Pass
+S0916,MALE,21.0,2.4,97.2,82.3,6.6,Y,no,Medium,72.4,Pass
+S0917,male,22.0,6.5,81.4,83.3,6.2,Yes,no,High,75.2,Pass
+S0918,Male,18.0,5.4,79.8,87.6,6.1,yes,no,Low,76.6,Pass
+S0919,Female,18.0,9.7,55.8,64.2,5.4,N,yes,High,63.2,Pass
+S0920, female ,18.0,3.7,86.7,88.5,8.1,no,No,Medium,74.0,Pass
+S0921,Male,19.0,3.9,84.1,,8.3,no,Yes,High,63.7,Pass
+S0922,female,23.0,4.4,67.5,76.2,4.9,Yes,yes,High,57.3,Pass
+S0923,MALE,20.0,8.4,58.8,87.7,8.8,Y,Yes,Medium,82.0,Pass
+S0924,male,24.0,7.5,165.0,56.4,8.1,Yes,No,High,91.9,Pass
+S0925,Female,21.0,7.8,98.7,57.5,7.2,No,no,Medium,76.9,Pass
+S0926,female,22.0,4.4,93.2,50.7,4.9,N,Yes,Low,59.3,Pass
+S0927,FEMALE,21.0,4.0,62.5,79.1,8.3,Yes,no,Low,64.6,Pass
+S0928,MALE,19.0,2.4,91.5,54.8,7.8,yes,no,Low,51.0,Pass
+S0929, Male ,22.0,3.5,81.4,54.9,5.0,N,Yes,Medium,49.0,Fail
+S0930,MALE,22.0,8.2,90.0,50.1,6.0,no,Yes,Low,72.5,Pass
+S0931,female,19.0,,91.1,43.5,7.5,Y,No,High,67.3,Pass
+S0932,Female,20.0,3.1,63.0,85.0,8.1,No,Yes,Medium,58.8,Pass
+S0933,MALE,22.0,3.1,84.0,58.8,6.7,yes,No,Low,54.5,Pass
+S0934,Female,20.0,5.6,66.6,68.2,9.0,no,No,High,58.6,Pass
+S0935, female ,19.0,5.1,86.9,95.5,5.2,no,Yes,,81.5,Pass
+S0936,Female,21.0,6.2,70.1,64.8,8.7,Y,no,Low,70.4,Pass
+S0937,female,22.0,9.7,75.0,90.9,5.7,N,yes,High,88.9,Pass
+S0938,male,23.0,3.5,81.0,52.9,6.2,Y,Yes,Medium,48.3,Fail
+S0939, female ,24.0,4.3,65.1,56.7,5.4,N,Yes,Low,51.1,Pass
+S0940,male,,4.0,72.0,43.6,8.8,Y,No,Medium,43.2,Fail
+S0941,MALE,22.0,2.8,59.8,84.6,6.1,N,No,Medium,61.7,Pass
+S0942, Male ,20.0,3.1,63.9,57.0,8.5,No,No,High,52.3,Pass
+S0943,FEMALE,22.0,7.4,92.8,,6.0,Y,Yes,Medium,73.7,Pass
+S0944,female,24.0,8.6,77.2,76.8,6.8,yes,yes,Medium,77.6,Pass
+S0945,male,22.0,7.5,73.5,44.3,4.8,N,Yes,Medium,57.5,Pass
+S0946,FEMALE,22.0,2.1,61.6,81.0,5.0,Y,Yes,High,56.4,Pass
+S0947,Male,21.0,8.7,59.2,84.2,6.7,Y,Yes,Medium,75.7,Pass
+S0948,,23.0,4.5,75.9,45.0,8.5,yes,yes,High,56.2,Pass
+S0949,male,22.0,2.5,82.0,,5.8,No,yes,Medium,68.0,Pass
+S0950, female ,20.0,3.8,56.7,59.0,6.1,no,No,Medium,47.5,Fail
+S0951,female,21.0,4.7,89.5,58.1,7.2,Y,no,High,67.7,Pass
+S0952,Female,24.0,6.0,77.1,45.4,6.9,Yes,Yes,Low,56.5,Pass
+S0953,FEMALE,18.0,7.4,60.2,93.6,6.4,N,No,High,81.4,Pass
+S0954,female,20.0,3.9,76.2,90.4,7.9,yes,yes,Low,71.9,Pass
+S0955,male,20.0,,,78.3,5.0,N,Yes,Medium,74.9,Pass
+S0956, Male ,23.0,2.1,81.6,89.8,7.1,Yes,yes,Low,68.3,Pass
+S0957, female ,18.0,5.1,91.4,63.4,4.8,no,,High,67.7,Pass
+S0958,Male,21.0,5.5,94.5,87.3,5.9,No,,Low,82.0,Pass
+S0959,female,22.0,7.9,89.1,87.5,6.7,Yes,no,Low,76.2,Pass
+S0960, Male ,,3.8,83.6,54.7,7.3,Yes,yes,Medium,57.9,Pass
+S0961,male,24.0,5.6,78.0,72.8,5.6,N,yes,High,60.0,Pass
+S0962, female ,23.0,8.4,71.3,69.0,5.6,yes,No,Low,67.1,Pass
+S0963,Female,24.0,2.9,56.9,48.5,5.2,No,Yes,Low,41.6,Fail
+S0964,FEMALE,,1.9,78.3,77.9,6.8,no,Yes,Medium,63.6,Pass
+S0965,male,23.0,,65.1,73.3,4.8,N,No,High,75.2,Pass
+S0966,MALE,18.0,9.9,90.3,83.9,5.5,N,Yes,High,84.6,Pass
+S0967,,,2.9,89.7,70.4,7.8,No,No,Medium,56.0,Pass
+S0968,Male,21.0,8.6,71.8,68.8,6.5,No,No,Low,77.3,Pass
+S0969,Female,20.0,4.9,80.9,46.9,9.1,no,yes,Low,58.9,Pass
+S0970, female ,,,87.6,74.4,7.2,Yes,No,,100.0,Pass
+S0971,,24.0,7.1,88.5,83.8,6.1,N,No,High,74.4,Pass
+S0972,male,,6.6,85.7,58.9,7.8,N,No,Medium,72.1,Pass
+S0973, Male ,22.0,3.9,59.3,86.9,5.3,Yes,yes,Medium,68.0,Pass
+S0974,MALE,,8.5,60.9,81.8,7.6,no,,Low,79.5,Pass
+S0975,FEMALE,19.0,2.0,76.0,85.5,8.0,Yes,No,Medium,63.5,Pass
+S0976, female ,23.0,2.3,65.2,82.2,7.8,N,no,Low,49.7,Fail
+S0977,female,18.0,9.2,92.8,92.5,8.4,No,Yes,Medium,83.6,Pass
+S0978,FEMALE,22.0,5.4,67.5,53.8,5.0,N,yes,Low,56.9,Pass
+S0979,MALE,21.0,2.9,93.6,47.8,7.3,Yes,yes,Medium,49.3,Fail
+S0980,FEMALE,19.0,9.2,73.0,53.6,6.0,Y,no,Low,64.8,Pass
+S0981,male,22.0,,63.3,56.8,5.0,No,No,Medium,64.8,Pass
+S0982, female ,23.0,4.5,86.2,64.1,6.6,no,no,Medium,59.1,Pass
+S0983,FEMALE,23.0,2.2,89.7,88.6,5.9,Y,no,Medium,63.9,Pass
+S0984,Female,22.0,39.0,80.4,45.0,6.4,No,Yes,High,100.0,Pass
+S0985,Male,24.0,3.2,60.2,70.8,7.3,yes,yes,Medium,55.6,Pass
+S0986,female,24.0,6.5,55.3,79.8,7.7,N,no,Medium,65.7,Pass
+S0987, Male ,21.0,8.5,83.8,48.1,7.3,Yes,No,Medium,70.3,Pass
+S0988, female ,19.0,5.0,85.3,71.5,8.4,Yes,No,High,62.1,Pass
+S0989, female ,24.0,2.0,68.9,67.6,6.0,No,Yes,,48.4,Fail
+S0990, Male ,23.0,7.4,70.9,55.3,7.5,Y,yes,Medium,60.1,Pass
+S0991,female,19.0,3.2,61.8,57.0,4.8,yes,No,High,46.0,Fail
+S0992,male,18.0,3.6,83.7,84.4,5.5,No,yes,High,66.5,Pass
+S0993,female,22.0,3.3,66.2,49.8,5.2,Yes,No,Low,51.8,Pass
+S0994,female,23.0,4.1,92.6,67.7,7.2,yes,no,Low,62.9,Pass
+S0995,Male,18.0,9.0,73.6,61.9,8.0,N,No,High,70.0,Pass
+S0996,FEMALE,19.0,2.1,71.1,58.6,8.3,Yes,yes,High,48.4,Fail
+S0997,Female,18.0,6.9,67.1,76.9,8.1,Y,no,Medium,63.8,Pass
+S0998, Male ,21.0,3.8,84.9,90.9,7.6,N,no,High,64.7,Pass
+S0999,male,20.0,4.2,88.2,43.9,6.6,N,Yes,High,59.7,Pass
+S1000, female ,21.0,5.2,73.2,81.9,5.9,Y,No,High,71.3,Pass
+S1001,male,19.0,6.3,89.5,85.1,7.4,yes,Yes,Low,73.9,Pass
+S1002, Male ,21.0,2.3,76.2,45.0,6.6,Yes,yes,Medium,52.1,Pass
+S1003,Male,23.0,4.1,71.3,91.5,5.5,no,Yes,High,65.0,Pass
+S1004,Male,19.0,,79.4,,8.6,N,Yes,High,63.2,Pass
+S1005,female,21.0,,66.2,55.7,5.9,Y,no,Low,44.9,Fail
+S1006, Male ,22.0,9.1,68.5,62.8,8.2,N,Yes,Medium,70.8,Pass
+S1007,MALE,24.0,6.1,70.2,76.5,7.7,yes,yes,High,65.1,Pass
+S1008, Male ,22.0,7.0,86.0,79.8,8.8,yes,Yes,Low,70.7,Pass
+S1009,male,21.0,8.4,87.4,90.8,8.9,No,yes,High,87.8,Pass
+S1010, Male ,24.0,8.3,92.6,79.0,7.9,Y,yes,Low,84.5,Pass
+S1011, Male ,24.0,9.9,84.0,70.9,8.8,Yes,yes,High,85.0,Pass
+S1012, Male ,23.0,8.2,87.9,54.8,9.2,Y,No,High,70.6,Pass
+S1013,female,23.0,4.7,74.7,65.9,7.2,No,No,Medium,64.8,Pass
+S1014,MALE,18.0,6.3,85.8,42.4,7.4,N,yes,Medium,59.5,Pass
+S1015,Male,23.0,5.8,62.1,93.9,6.9,N,Yes,High,69.8,Pass
+S1016,Female,19.0,9.3,64.4,92.1,8.5,no,Yes,Low,78.1,Pass
+S1017,MALE,22.0,5.9,72.6,91.6,8.5,yes,no,Medium,70.5,Pass
+S1018,MALE,19.0,5.0,69.9,58.2,4.8,Yes,No,Low,57.3,Pass
+S1019,Female,22.0,3.3,79.2,92.6,8.7,yes,no,High,73.1,Pass
+S1020,MALE,20.0,4.4,85.7,82.9,9.0,N,Yes,Medium,73.1,Pass
+S1021,male,23.0,3.6,86.1,58.1,4.5,No,Yes,Medium,51.2,Pass
+S1022,Male,21.0,9.1,62.1,88.4,7.1,Yes,No,Low,83.0,Pass
+S1023,MALE,22.0,8.2,97.4,50.7,9.1,Y,yes,Medium,68.6,Pass
+S1024,Male,21.0,2.3,55.2,65.7,5.0,no,no,High,45.0,Fail
+S1025,female,,9.9,59.0,59.1,5.8,no,Yes,High,68.1,Pass
+S1026, Male ,19.0,6.1,61.4,85.9,4.6,No,yes,Medium,67.9,Pass
+S1027,female,21.0,8.1,95.7,76.8,6.5,yes,yes,Medium,79.7,Pass
+S1028,Male,22.0,10.0,,84.6,7.3,no,yes,Low,89.7,Pass
+S1029,MALE,20.0,9.8,57.8,56.8,7.4,yes,Yes,High,64.9,Pass
+S1030,Female,22.0,,64.8,46.3,7.8,N,Yes,High,47.0,Fail
+S1031,Male,20.0,7.2,58.5,84.1,6.4,N,No,High,68.4,Pass
+S1032,MALE,23.0,4.0,56.7,68.6,6.5,no,,Medium,58.8,Pass
+S1033,FEMALE,24.0,8.5,71.9,81.8,5.5,N,no,Medium,74.9,Pass
+S1034,male,24.0,9.3,98.3,92.0,5.3,N,No,Medium,90.1,Pass
+S1035,male,23.0,2.3,82.0,60.0,5.2,no,yes,High,53.9,Pass
+S1036, female ,23.0,10.0,,64.8,7.1,no,no,Medium,72.8,Pass
+S1037, female ,23.0,3.6,86.3,91.6,8.5,yes,no,Medium,66.0,Pass
+S1038,female,24.0,8.7,81.3,47.4,6.2,Yes,No,High,69.5,Pass
+S1039,male,23.0,8.3,96.6,50.7,6.5,no,yes,,78.3,Pass
+S1040, female ,20.0,4.7,91.1,56.1,5.9,yes,Yes,Medium,63.0,Pass
+S1041, Male ,22.0,8.7,83.2,45.6,8.6,N,No,High,65.2,Pass
+S1042,Male,21.0,8.7,74.3,64.7,5.1,Yes,No,Medium,73.8,Pass
+S1043,Female,19.0,3.2,63.9,81.4,4.6,yes,No,Low,52.0,Pass
+S1044, female ,19.0,6.7,83.9,71.6,7.5,Y,no,High,74.6,Pass
+S1045,Male,20.0,8.4,90.4,59.6,5.2,no,yes,High,78.2,Pass
+S1046,Male,22.0,7.5,67.6,79.5,8.7,yes,Yes,High,66.7,Pass
+S1047, female ,20.0,9.3,56.5,83.1,7.6,no,yes,Medium,79.1,Pass
+S1048,FEMALE,,2.0,81.4,76.6,9.1,N,No,Medium,63.9,Pass
+S1049,FEMALE,20.0,7.5,77.7,51.9,5.1,Y,no,,68.5,Pass
+S1050,male,24.0,9.6,65.2,65.9,5.1,yes,no,Medium,73.8,Pass
+S1051, female ,20.0,6.4,62.5,76.6,8.3,N,No,Medium,68.6,Pass
+S1052, female ,23.0,6.4,56.6,42.2,8.5,Yes,,Medium,52.0,Pass
+S1053,male,19.0,3.3,65.5,52.8,8.7,N,yes,High,46.7,Fail
+S1054,male,23.0,9.9,55.0,58.5,7.8,N,no,High,64.1,Pass
+S1055,female,23.0,9.0,61.9,73.1,8.9,no,yes,High,68.2,Pass
+S1056,MALE,93.0,5.8,98.9,48.0,7.4,no,yes,High,64.4,Pass
+S1057,male,20.0,4.3,89.3,55.5,6.6,Y,no,Low,64.5,Pass
+S1058,MALE,21.0,5.8,,80.5,6.5,N,No,High,64.5,Pass
+S1059,Female,20.0,2.5,72.4,83.5,8.4,no,,Medium,64.0,Pass
+S1060,female,22.0,3.7,80.8,77.1,6.3,No,Yes,Medium,69.1,Pass
+S1061,FEMALE,24.0,3.6,77.8,49.0,5.6,Yes,yes,Medium,49.2,Fail
+S1062,Female,23.0,6.1,87.4,74.1,6.5,No,no,High,67.6,Pass
+S1063, female ,20.0,1.8,58.0,64.2,4.5,N,yes,High,49.5,Fail
+S1064,,20.0,9.3,59.0,92.7,6.8,N,Yes,High,86.7,Pass
+S1065,male,18.0,3.5,67.5,66.4,7.9,N,Yes,Low,48.5,Fail
+S1066,male,22.0,2.9,91.5,89.2,7.8,Yes,Yes,Medium,61.8,Pass
+S1067, Male ,23.0,7.7,95.3,49.2,5.8,Y,No,Medium,75.4,Pass
+S1068,FEMALE,22.0,9.3,70.3,51.4,8.9,No,Yes,Low,62.5,Pass
+S1069, female ,21.0,8.7,97.4,74.0,7.2,No,No,High,80.9,Pass
+S1070, Male ,,,67.2,59.7,4.7,Y,Yes,High,55.2,Pass
+S1071,FEMALE,24.0,2.0,81.7,57.2,4.7,Yes,Yes,High,46.0,Fail
+S1072,,20.0,6.6,63.6,,6.8,N,yes,Medium,53.2,Pass
+S1073, female ,24.0,9.3,95.9,61.9,6.2,no,no,High,75.4,Pass
+S1074,,24.0,8.1,80.3,63.2,7.2,No,Yes,,75.4,Pass
+S1075,FEMALE,19.0,8.7,66.5,62.4,9.0,No,no,High,65.8,Pass
+S1076,male,20.0,8.9,72.9,87.1,4.9,Y,No,High,77.9,Pass
+S1077,female,18.0,9.7,59.7,72.8,7.9,no,no,Medium,69.2,Pass
+S1078,FEMALE,20.0,,58.2,43.1,7.0,Yes,no,Low,51.8,Pass
+S1079,female,23.0,9.5,67.9,43.2,8.5,N,Yes,Low,67.1,Pass
+S1080,Female,18.0,5.0,96.7,72.2,8.0,yes,no,Medium,64.8,Pass
+S1081,female,20.0,2.6,90.3,75.0,5.8,Yes,Yes,High,65.2,Pass
+S1082,MALE,21.0,4.3,97.1,54.4,6.9,Y,No,Medium,58.0,Pass
+S1083, female ,23.0,2.9,93.5,46.8,7.0,No,Yes,Medium,47.1,Fail
+S1084,male,20.0,3.1,90.8,67.0,7.4,no,no,High,54.5,Pass
+S1085,male,23.0,9.6,80.3,56.1,5.7,No,yes,Medium,76.7,Pass
+S1086,male,21.0,8.3,85.5,88.0,7.5,Y,No,Low,86.8,Pass
+S1087,male,19.0,,97.5,44.7,7.6,Yes,Yes,Medium,73.2,Pass
+S1088,FEMALE,19.0,7.1,79.8,75.4,7.6,No,no,High,66.2,Pass
+S1089,male,24.0,3.2,88.9,74.4,7.7,yes,No,High,67.7,Pass
+S1090,female,22.0,9.7,88.3,50.1,7.0,Y,No,Medium,75.3,Pass
+S1091,MALE,20.0,7.5,97.3,93.7,7.2,Yes,No,High,81.2,Pass
+S1092,Male,22.0,9.4,75.2,51.2,7.4,no,Yes,Low,73.0,Pass
+S1093,female,23.0,8.3,75.3,72.6,8.7,Yes,yes,Low,78.5,Pass
+S1094,male,20.0,3.6,80.8,42.8,7.0,N,No,High,45.8,Fail
+S1095,FEMALE,19.0,6.6,56.2,70.4,4.6,yes,yes,Low,64.4,Pass
+S1096,female,18.0,3.2,60.1,83.8,6.6,N,Yes,High,56.0,Pass
+S1097,FEMALE,22.0,4.3,58.0,92.1,8.8,No,no,Medium,62.1,Pass
+S1098,Male,23.0,7.4,82.9,86.7,7.2,Yes,no,Medium,79.3,Pass
+S1099,Female,22.0,2.8,98.7,68.7,6.1,yes,no,High,55.8,Pass
+S1100,Female,19.0,7.8,84.8,54.1,6.2,yes,No,High,65.3,Pass
+S1101,female,19.0,9.6,65.1,53.0,9.1,yes,yes,Medium,64.0,Pass
+S1102,male,,9.6,68.9,,5.9,Y,Yes,High,81.1,Pass
+S1103, Male ,23.0,5.0,97.0,85.9,5.3,Y,yes,Low,77.5,Pass
+S1104,MALE,22.0,10.0,77.7,56.4,7.8,Yes,No,Medium,73.8,Pass
+S1105, female ,19.0,9.7,55.4,82.3,7.3,N,Yes,High,73.9,Pass
+S1106, Male ,23.0,2.1,91.6,62.6,5.9,N,yes,High,50.2,Pass
+S1107,male,19.0,6.7,65.9,65.3,8.2,Yes,yes,Medium,70.6,Pass
+S1108,female,18.0,9.4,59.1,53.2,5.7,Yes,no,High,66.8,Pass
+S1109,female,,9.7,84.6,53.6,7.5,No,yes,Medium,73.9,Pass
+S1110,male,21.0,3.6,91.1,86.5,7.2,No,yes,Low,75.2,Pass
+S1111,Female,20.0,6.4,58.3,81.2,7.2,Yes,No,High,67.5,Pass
+S1112, Male ,23.0,9.5,96.0,52.2,7.6,no,Yes,High,72.6,Pass
+S1113,FEMALE,21.0,3.0,76.0,51.7,5.9,N,no,High,43.5,Fail
+S1114,Male,18.0,7.9,70.6,84.8,8.0,Y,No,Low,76.4,Pass
+S1115,Female,23.0,3.8,,43.6,4.6,Y,yes,High,53.3,Pass
+S1116,Male,24.0,9.9,66.8,94.7,6.8,yes,Yes,Medium,83.6,Pass
+S1117,MALE,19.0,3.2,96.7,54.7,5.1,Yes,no,Medium,58.4,Pass
+S1118,Female,18.0,,85.1,66.4,4.9,No,no,High,71.8,Pass
+S1119,Female,22.0,2.5,95.0,55.4,8.2,yes,Yes,High,51.5,Pass
+S1120,female,19.0,7.6,77.0,73.5,5.7,Y,,Medium,79.7,Pass
+S1121,female,21.0,7.0,63.8,77.0,7.4,Yes,Yes,Medium,193.0,Pass
+S1122,Male,23.0,9.1,87.4,46.6,5.8,Y,no,Low,66.6,Pass
+S1123,MALE,21.0,5.5,93.4,67.3,5.7,no,yes,Medium,67.0,Pass
+S1124,MALE,21.0,4.0,64.1,89.1,8.0,yes,yes,Medium,65.1,Pass
+S1125,FEMALE,23.0,3.8,63.9,94.6,7.3,Yes,yes,Low,67.6,Pass
+S1126,male,19.0,2.4,66.0,63.5,8.8,no,Yes,High,47.7,Fail
+S1127,MALE,24.0,3.9,82.2,53.5,8.0,no,Yes,Medium,59.8,Pass
+S1128,Male,20.0,2.7,61.9,62.7,7.6,No,yes,Low,56.2,Pass
+S1129,male,20.0,1.8,59.7,64.9,6.2,Yes,No,Low,41.3,Fail
+S1130, Male ,20.0,5.0,95.5,74.2,5.3,N,,Medium,65.8,Pass
+S1131,FEMALE,23.0,7.8,84.7,45.9,8.2,No,yes,Medium,70.4,Pass
+S1132,FEMALE,18.0,9.7,84.2,72.1,5.6,no,Yes,High,80.9,Pass
+S1133, female ,24.0,9.1,82.0,44.8,5.3,Yes,Yes,High,64.7,Pass
+S1134,female,18.0,5.8,88.6,92.3,7.0,Yes,no,High,72.8,Pass
+S1135,MALE,23.0,4.9,78.8,67.4,4.7,Yes,no,Medium,64.5,Pass
+S1136,female,22.0,6.3,56.9,61.1,9.1,Yes,No,Medium,58.3,Pass
+S1137,Female,19.0,2.6,76.2,74.7,9.0,No,Yes,High,60.9,Pass
+S1138,female,22.0,5.7,158.0,78.2,7.3,Y,No,Low,92.6,Pass
+S1139,male,23.0,8.9,76.7,85.3,8.4,N,no,High,77.7,Pass
+S1140,Male,23.0,7.1,98.4,80.3,8.4,Yes,Yes,Low,83.8,Pass
+S1141,MALE,24.0,7.4,94.5,85.7,8.0,yes,no,High,78.5,Pass
+S1142,MALE,18.0,3.1,93.2,42.3,6.4,Yes,Yes,Low,49.1,Fail
+S1143,Male,19.0,,76.6,69.2,6.3,No,No,Medium,52.9,Pass
+S1144,male,21.0,8.7,98.3,62.6,7.6,Yes,yes,High,73.4,Pass
+S1145,Female,24.0,4.2,95.3,94.8,7.9,Y,No,Medium,73.2,Pass
+S1146, female ,,4.4,67.3,78.2,5.3,no,no,Medium,63.1,Pass
+S1147,FEMALE,18.0,,64.8,49.1,7.2,N,no,Low,65.3,Pass
+S1148, female ,,,80.4,90.2,8.5,No,yes,High,57.3,Pass
+S1149, female ,21.0,3.2,,44.2,4.8,Yes,yes,High,45.5,Fail
+S1150,FEMALE,,4.9,90.2,51.7,5.7,Yes,yes,Low,63.7,Pass
+S1151,Female,21.0,7.8,76.0,51.2,8.4,N,no,High,69.0,Pass
+S1152, Male ,19.0,6.3,78.8,68.6,4.7,Yes,No,Low,68.3,Pass
+S1153,male,23.0,9.2,77.1,60.3,6.7,no,yes,Low,70.4,Pass
+S1154,female,24.0,2.6,72.3,67.3,6.7,Yes,Yes,Medium,56.0,Pass
+S1155,FEMALE,,6.7,85.2,46.8,6.7,Y,,Low,59.9,Pass
+S1156,male,18.0,6.8,62.7,80.4,9.0,No,no,Medium,72.1,Pass
+S1157,Female,18.0,5.8,98.0,65.4,8.8,No,No,High,70.5,Pass
+S1158, female ,20.0,2.1,85.7,,5.6,Yes,No,High,56.8,Pass
+S1159,Female,22.0,9.5,75.2,58.9,7.7,no,yes,High,79.8,Pass
+S1160,Male,22.0,3.2,85.3,,6.3,No,no,High,64.0,Pass
+S1161, Male ,18.0,9.1,55.5,69.0,5.7,yes,Yes,Medium,64.4,Pass
+S1162,FEMALE,20.0,3.1,64.3,94.6,7.0,no,yes,Low,66.4,Pass
+S1163,Male,105.0,2.6,80.6,57.2,6.5,N,No,High,50.6,Pass
+S1164,Male,21.0,3.5,,61.5,5.9,no,Yes,,57.2,Pass
+S1165, Male ,23.0,3.4,82.0,,8.2,Yes,No,Medium,53.5,Pass
+S1166,Female,22.0,7.5,66.4,90.8,6.3,No,yes,High,79.8,Pass
+S1167, Male ,22.0,7.7,79.1,56.2,6.0,No,Yes,Low,62.7,Pass
+S1168,MALE,21.0,7.8,65.4,86.8,7.0,No,No,Medium,74.6,Pass
+S1169,Female,19.0,4.0,75.7,92.0,9.0,No,no,High,75.2,Pass
+S1170,Female,24.0,4.1,82.0,69.9,5.0,no,no,Medium,55.8,Pass
+S1171,female,22.0,3.7,145.0,65.5,7.0,no,yes,Medium,75.9,Pass
+S1172,male,21.0,,76.9,50.9,6.2,Yes,Yes,Low,43.1,Fail
+S1173,Male,20.0,6.5,64.3,81.8,8.5,Y,No,High,73.5,Pass
+S1174, female ,19.0,8.7,85.8,68.5,7.4,N,No,High,76.8,Pass
+S1175,FEMALE,24.0,3.1,71.4,93.3,7.6,N,no,Low,68.5,Pass
+S0016, Male ,23.0,2.3,88.1,42.5,4.7,No,No,Medium,44.6,Fail
+S0017,FEMALE,18.0,2.8,84.4,45.7,5.0,No,,Medium,53.7,Pass
+S0018, Male ,21.0,4.3,58.8,64.2,5.3,Yes,No,High,48.7,Fail
+S0019, female ,18.0,5.1,70.1,70.4,5.5,No,Yes,High,190.0,Pass
+S0020,Female,21.0,5.9,78.8,79.0,5.7,Yes,Yes,Low,64.4,Pass
+S0021,,18.0,9.1,97.7,61.0,8.4,No,No,Medium,76.4,Pass
+S0022,MALE,24.0,,80.9,,5.0,Y,yes,Low,78.6,Pass
+S0023,FEMALE,20.0,4.4,79.4,55.6,8.0,N,no,High,61.4,Pass
+S0024,female,22.0,2.8,92.0,43.8,5.7,no,yes,Medium,47.9,Fail
+S0025,Female,21.0,9.3,91.0,75.4,6.2,No,yes,High,78.3,Pass
+S0026,MALE,22.0,4.2,73.4,45.1,7.1,No,No,Low,45.6,Fail
+S0027, Male ,21.0,,78.6,74.1,8.3,No,No,Medium,70.7,Pass
+S0028,female,23.0,3.6,93.1,90.3,6.1,Yes,no,Medium,66.3,Pass
+S0029,male,,2.9,75.9,53.7,6.4,N,yes,High,55.7,Pass
+S0030,male,21.0,3.1,,74.4,6.2,yes,yes,High,67.7,Pass
+S0031,FEMALE,20.0,7.9,76.0,48.6,7.7,Yes,yes,Medium,69.7,Pass
+S0032,male,18.0,6.8,58.5,93.7,7.3,Y,yes,Low,79.6,Pass
+S0033,female,21.0,5.2,94.7,46.7,7.2,Yes,Yes,Medium,59.2,Pass
+S0034,female,18.0,6.3,86.4,74.7,7.6,yes,No,Medium,71.4,Pass
+S0035,Female,20.0,5.7,,62.3,7.0,Y,Yes,High,57.6,Pass
+S0036,Male,19.0,6.2,94.6,83.2,9.1,yes,No,Medium,77.7,Pass
+S0037, female ,24.0,7.2,90.2,77.0,5.8,yes,Yes,High,77.9,Pass
+S0038,male,22.0,3.6,84.8,85.4,6.0,N,no,Medium,69.6,Pass
+S0039,FEMALE,21.0,3.8,82.3,52.0,6.9,no,yes,Medium,61.3,Pass
+S0040,male,24.0,8.0,60.3,48.0,8.1,Y,No,High,57.4,Pass
