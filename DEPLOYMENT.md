@@ -60,22 +60,23 @@ The repository includes `frontend/public/_redirects` and `netlify.toml` which au
 
 ## 2. Backend Deployment (FastAPI on Render / Railway / Fly.io)
 
-### Deploying on Render (Free / Starter Tier)
+### Deploying on Render (Free Tier with render.yaml Blueprint)
+
+The repository includes a ready-to-use `render.yaml` configuration:
 
 1. Sign up / Log in to [Render](https://render.com/).
-2. Click **"New +"** > **"Web Service"**.
+2. Click **"New +"** > **"Blueprint"** (or **"Web Service"**).
 3. Connect your GitHub repository: `https://github.com/Rakeshpalya/SmartEDA.git`.
-4. Configure the Web Service:
-   - **Name**: `smarteda-backend`
+4. Render will automatically detect `render.yaml` and configure:
    - **Root Directory**: `backend`
    - **Runtime**: `Python 3`
    - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port 10000`
-5. **Environment Variables**:
-   Add the following environment variable:
-   - `CORS_ORIGINS`: `https://your-netlify-subdomain.netlify.app,http://localhost:5173`
-6. Click **Create Web Service**. Once deployed, copy your Render URL (e.g., `https://smarteda-backend.onrender.com`).
-7. Paste this URL into your Netlify frontend's `VITE_API_BASE_URL` setting and trigger a frontend redeploy.
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - **Environment Variables**:
+     - `CORS_ORIGINS`: `https://smarteda.netlify.app,http://localhost:5173`
+5. Click **Apply / Create Web Service**.
+6. Once deployed, copy your Render URL (e.g., `https://smarteda-backend.onrender.com`).
+7. Paste this URL into your Netlify frontend's `VITE_API_BASE_URL` environment variable setting and trigger a frontend redeploy.
 
 ---
 
@@ -114,4 +115,5 @@ Accessible at: `http://localhost:5173/`
 - [x] SPA fallback configured via `_redirects` and `netlify.toml`.
 - [x] Zero hardcoded localhost references in production frontend bundle (`import.meta.env.VITE_API_BASE_URL`).
 - [x] Backend CORS origins configurable via `CORS_ORIGINS`.
+- [x] Render 1-click blueprint provided via `render.yaml`.
 - [x] Raw data immutability strictly preserved across all cleaning operations.
