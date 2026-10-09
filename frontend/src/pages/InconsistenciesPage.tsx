@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, CheckCircle2, ArrowRight, RefreshCw, Wand2, Layers } from 'lucide-react';
 import { api } from '../services/api';
-import { InconsistentAnalysisResponse, OperationExplanation } from '../types';
+import { InconsistentAnalysisResponse, InconsistentColumnItem, OperationExplanation } from '../types';
 import { ExplanationCard } from '../components/ExplanationCard';
+import { BackendErrorCard } from '../components/BackendErrorCard';
 
 interface InconsistenciesPageProps {
   onRefreshSummary: () => void;
@@ -11,6 +12,7 @@ interface InconsistenciesPageProps {
 export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefreshSummary }) => {
   const [data, setData] = useState<InconsistentAnalysisResponse | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedCol, setSelectedCol] = useState<string>('');
   const [action, setAction] = useState<string>('canonical');
   const [explanation, setExplanation] = useState<OperationExplanation | null>(null);
@@ -18,14 +20,16 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
 
   const fetchInconsistencies = async () => {
     setLoading(true);
+    setError(null);
     try {
       const res = await api.getInconsistencies();
       setData(res);
       if (res.inconsistent_columns.length > 0) {
         setSelectedCol(res.inconsistent_columns[0].column);
       }
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
+      setError(e.message || "Failed to fetch text inconsistencies from analysis backend.");
     } finally {
       setLoading(false);
     }
@@ -50,8 +54,35 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
     }
   };
 
-  if (loading || !data) {
-    return <div className="p-12 text-center text-xs text-slate-500">Scanning for text inconsistencies...</div>;
+  if (error) {
+    return (
+      <BackendErrorCard
+        error={error}
+        onRetry={fetchInconsistencies}
+        isRetrying={loading}
+        featureName="text inconsistency analysis"
+      />
+    );
+  }
+
+  if (loading && !data) {
+    return (
+      <div className="p-12 text-center text-xs text-slate-500 flex flex-col items-center justify-center gap-2">
+        <RefreshCw className="w-5 h-5 text-purple-600 animate-spin" />
+        <span>Scanning for text inconsistencies...</span>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <BackendErrorCard
+        error="No analysis data received from backend."
+        onRetry={fetchInconsistencies}
+        isRetrying={loading}
+        featureName="text inconsistency analysis"
+      />
+    );
   }
 
   const activeColItem = data.inconsistent_columns.find((c) => c.column === selectedCol);
@@ -98,7 +129,7 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
       {/* Inconsistent Columns Cards */}
       {data.inconsistent_columns.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {data.inconsistent_columns.map((c) => (
+          {data.inconsistent_columns.map((c: InconsistentColumnItem) => (
             <div
               key={c.column}
               onClick={() => setSelectedCol(c.column)}
@@ -118,13 +149,13 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
               </div>
 
               <div className="space-y-2 text-xs">
-                {Object.entries(c.variations).map(([norm, variants], vIdx) => (
+                {Object.entries(c.variations).map(([norm, variants]: [string, string[]], vIdx: number) => (
                   <div key={vIdx} className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
                     <span className="text-[11px] font-bold text-slate-500 block uppercase">
                       Canonical Entity: <strong className="text-emerald-600 dark:text-emerald-400 font-mono">"{norm}"</strong>
                     </span>
                     <div className="mt-1 flex flex-wrap gap-1">
-                      {variants.map((v, idx) => (
+                      {variants.map((v: string, idx: number) => (
                         <span key={idx} className="font-mono text-[10px] px-1.5 py-0.5 bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 rounded border border-rose-200 dark:border-rose-900/40">
                           "{v}"
                         </span>
@@ -172,7 +203,7 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
                 <p className="text-[11px] text-slate-500 mb-3">Original inconsistent entries preserved in raw dataset:</p>
                 <div className="space-y-1.5 max-h-48 overflow-y-auto">
                   {activeColItem.raw_counts &&
-                    Object.entries(activeColItem.raw_counts).map(([cat, cnt]) => (
+                    Object.entries(activeColItem.raw_counts).map(([cat, cnt]: [string, number]) => (
                       <div key={cat} className="flex items-center justify-between text-xs py-1 px-2 rounded-lg bg-white dark:bg-slate-800 border border-rose-100 dark:border-rose-900/30">
                         <span className="font-mono text-slate-800 dark:text-slate-200">"{cat}"</span>
                         <span className="font-mono font-bold text-rose-600 dark:text-rose-400">{cnt}</span>
@@ -217,7 +248,7 @@ export const InconsistenciesPage: React.FC<InconsistenciesPageProps> = ({ onRefr
                 <p className="text-[11px] text-slate-500 mb-3">Unified standardized categories in cleaned dataset:</p>
                 <div className="space-y-1.5 max-h-48 overflow-y-auto">
                   {activeColItem.clean_counts &&
-                    Object.entries(activeColItem.clean_counts).map(([cat, cnt]) => (
+                    Object.entries(activeColItem.clean_counts).map(([cat, cnt]: [string, number]) => (
                       <div key={cat} className="flex items-center justify-between text-xs py-1 px-2 rounded-lg bg-white dark:bg-slate-800 border border-emerald-100 dark:border-emerald-900/30">
                         <span className="font-mono font-bold text-slate-900 dark:text-white">"{cat}"</span>
                         <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">{cnt}</span>

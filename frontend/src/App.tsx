@@ -4,6 +4,7 @@ import { DatasetSummary, PresentationSlide } from './types';
 import { Navbar } from './components/Navbar';
 import { Sidebar, NavTabId } from './components/Sidebar';
 import { PresentationModal } from './components/PresentationModal';
+import { BackendErrorCard } from './components/BackendErrorCard';
 
 // Pages
 import { LandingPage } from './pages/LandingPage';
@@ -55,13 +56,22 @@ export const App: React.FC = () => {
     }
   }, [darkMode]);
 
-  // Initial load
+  // Initial load & connection error tracking
+  const [backendError, setBackendError] = useState<string | null>(null);
+  const [isRetryingSummary, setIsRetryingSummary] = useState<boolean>(false);
+
   const refreshSummary = async () => {
+    setIsRetryingSummary(true);
+    setBackendError(null);
     try {
       const res = await api.getOverview();
       setSummary(res);
-    } catch (e) {
-      console.warn("No active dataset yet or backend waking up.");
+      setBackendError(null);
+    } catch (e: any) {
+      console.warn("Backend error or unreachable:", e);
+      setBackendError(e.message || "Failed to reach the analysis backend.");
+    } finally {
+      setIsRetryingSummary(false);
     }
   };
 
@@ -166,13 +176,22 @@ export const App: React.FC = () => {
 
         {/* Content Viewport */}
         <main className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8 xl:p-10 overflow-y-auto">
-          {activeTab === 'overview' && summary && (
-            <OverviewPage
-              summary={summary}
-              onNavigate={(tab) => setActiveTab(tab)}
-              onUploadFile={handleFileUpload}
-              onResetDemo={handleLoadDemo}
-            />
+          {activeTab === 'overview' && (
+            summary ? (
+              <OverviewPage
+                summary={summary}
+                onNavigate={(tab) => setActiveTab(tab)}
+                onUploadFile={handleFileUpload}
+                onResetDemo={handleLoadDemo}
+              />
+            ) : (
+              <BackendErrorCard
+                error={backendError}
+                onRetry={refreshSummary}
+                isRetrying={isRetryingSummary}
+                featureName="dataset overview and health analysis"
+              />
+            )
           )}
 
           {activeTab === 'raw_data' && (

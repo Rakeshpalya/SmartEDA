@@ -17,6 +17,10 @@ from app.services.report_service import ReportService
 
 router = APIRouter()
 
+@router.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 @router.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     filename = file.filename

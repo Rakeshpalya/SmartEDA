@@ -8,6 +8,7 @@ import {
 import { api } from '../services/api';
 import { CategoricalAnalysisResponse, DatasetSummary, OperationExplanation } from '../types';
 import { ExplanationCard } from '../components/ExplanationCard';
+import { BackendErrorCard } from '../components/BackendErrorCard';
 
 const COLORS = ['#4f46e5', '#06b6d4', '#10b981', '#f59e0b', '#ec4899', '#8b5cf6', '#3b82f6', '#14b8a6'];
 
@@ -23,6 +24,7 @@ export const CategoricalPage: React.FC<CategoricalPageProps> = ({ onRefreshSumma
   const [analysis, setAnalysis] = useState<CategoricalAnalysisResponse | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [isNormalizing, setIsNormalizing] = useState(false);
   const [explanation, setExplanation] = useState<OperationExplanation | null>(null);
   const [normalizeSuccess, setNormalizeSuccess] = useState(false);
@@ -40,18 +42,23 @@ export const CategoricalPage: React.FC<CategoricalPageProps> = ({ onRefreshSumma
       } else {
         setLoading(false);
       }
+    }).catch((e: any) => {
+      setError(e.message || "Failed to load overview data from backend.");
+      setLoading(false);
     });
   }, []);
 
   const loadColAnalysis = async (col: string, rawMode: boolean) => {
     setLoading(true);
+    setError(null);
     try {
       const res = await api.getCategoricalAnalysis(col, rawMode);
       setAnalysis(res);
       // Default state: All Categories selected
       setSelectedCategories(res.distribution.map((d) => d.category));
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
+      setError(e.message || `Failed to analyze categorical column '${col}'.`);
     } finally {
       setLoading(false);
     }
@@ -260,8 +267,18 @@ export const CategoricalPage: React.FC<CategoricalPageProps> = ({ onRefreshSumma
         </div>
       </div>
 
-      {loading || !analysis ? (
-        <div className="p-12 text-center text-xs text-slate-500">Analyzing categories...</div>
+      {error ? (
+        <BackendErrorCard
+          error={error}
+          onRetry={() => loadColAnalysis(selectedCol, useRaw)}
+          isRetrying={loading}
+          featureName={`categorical analysis for '${selectedCol}'`}
+        />
+      ) : loading || !analysis ? (
+        <div className="p-12 text-center text-xs text-slate-500 flex flex-col items-center justify-center gap-2">
+          <RefreshCw className="w-5 h-5 text-purple-600 animate-spin" />
+          <span>Analyzing categories...</span>
+        </div>
       ) : (
         <>
           {/* Inconsistency Detection Banner if column has multiple casing/whitespace representations */}

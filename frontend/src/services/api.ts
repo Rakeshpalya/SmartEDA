@@ -5,57 +5,119 @@ import {
   TargetAnalysisResponse, MLTrainResponse, InsightItem,
   PresentationSlide, BeforeAfterResponse
 } from '../types';
-const getApiBase = (): string => {
-  const envUrl = import.meta.env.VITE_API_BASE_URL;
-  if (envUrl && typeof envUrl === 'string' && envUrl.trim()) {
-    const trimmed = envUrl.trim().replace(/\/+$/, '');
-    return trimmed.endsWith('/api') ? trimmed : `${trimmed}/api`;
-  }
-  return '/api';
+
+export const API_BASE_URL: string =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+
+// Normalize base URL to ensure clean path joining
+const cleanBaseUrl = (baseUrl: string): string => {
+  return baseUrl.replace(/\/+$/, '');
 };
 
-const API_BASE = getApiBase();
+// Builds full API route URL, guaranteeing '/api' prefix without duplicate slashes
+export const buildApiUrl = (endpoint: string): string => {
+  const base = cleanBaseUrl(API_BASE_URL);
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
 
-async function handleResponse<T>(res: Response): Promise<T> {
+  if (base.endsWith('/api')) {
+    return cleanEndpoint.startsWith('/api/')
+      ? `${base}${cleanEndpoint.substring(4)}`
+      : `${base}${cleanEndpoint}`;
+  }
+  return cleanEndpoint.startsWith('/api/')
+    ? `${base}${cleanEndpoint}`
+    : `${base}/api${cleanEndpoint}`;
+};
+
+async function fetchWithHandling<T>(url: string, options: RequestInit = {}, timeoutMs = 15000): Promise<T> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      ...options,
+      signal: options.signal || controller.signal,
+    });
+  } catch (err: any) {
+    if (err.name === 'AbortError') {
+      throw new Error(`Request timed out after ${timeoutMs / 1000}s. The backend server took too long to respond.`);
+    }
+    // Failed to fetch covers: Connection Refused, Offline, DNS failure, or CORS blocked
+    throw new Error(
+      `Backend Connection Error: Failed to reach '${API_BASE_URL}'. Please ensure the FastAPI backend is online and CORS allows this domain.`
+    );
+  } finally {
+    clearTimeout(timer);
+  }
+
   if (!res.ok) {
-    let errMsg = `Request failed (${res.status})`;
-    try {
-      const errData = await res.json();
-      if (errData.detail) {
-        errMsg = typeof errData.detail === 'string' ? errData.detail : JSON.stringify(errData.detail);
+    let errMsg = `Server returned HTTP ${res.status}: ${res.statusText || 'Error'}`;
+    const contentType = res.headers.get('content-type') || '';
+    if (contentType.includes('application/json')) {
+      try {
+        const errJson = await res.json();
+        if (errJson.detail) {
+          errMsg = typeof errJson.detail === 'string' ? errJson.detail : JSON.stringify(errJson.detail);
+        }
+      } catch {
+        // ignore
       }
-    } catch {
-      // ignore json parse error
+    } else {
+      try {
+        const text = await res.text();
+        if (text && text.length < 200 && !text.includes('<!DOCTYPE') && !text.includes('<html')) {
+          errMsg = text;
+        }
+      } catch {
+        // ignore
+      }
     }
     throw new Error(errMsg);
   }
-  return res.json();
+
+  const contentType = res.headers.get('content-type') || '';
+  if (!contentType.includes('application/json')) {
+    throw new Error(
+      `Invalid response format: Expected JSON but received ${contentType || 'HTML'}. If deployed on Netlify, please verify VITE_API_BASE_URL points to the public backend.`
+    );
+  }
+
+  try {
+    return (await res.json()) as T;
+  } catch (err: any) {
+    throw new Error(`Failed to decode server response JSON: ${err.message}`);
+  }
 }
 
 export const api = {
+  checkHealth: async (): Promise<{ status: string }> => {
+    return fetchWithHandling<{ status: string }>(buildApiUrl('/health'), { method: 'GET' }, 5000);
+  },
+
   uploadFile: async (file: File): Promise<{ message: string; overview: DatasetSummary }> => {
     const formData = new FormData();
     formData.append('file', file);
-    const res = await fetch(`${API_BASE}/upload`, {
+    return fetchWithHandling<{ message: string; overview: DatasetSummary }>(buildApiUrl('/upload'), {
       method: 'POST',
       body: formData,
     });
-    return handleResponse(res);
   },
 
   loadDemoDataset: async (): Promise<{ message: string; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/demo/load`, { method: 'POST' });
-    return handleResponse(res);
+    return fetchWithHandling<{ message: string; overview: DatasetSummary }>(buildApiUrl('/demo/load'), {
+      method: 'POST',
+    });
   },
 
   resetDataset: async (): Promise<{ message: string; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/reset`, { method: 'POST' });
-    return handleResponse(res);
+    return fetchWithHandling<{ message: string; overview: DatasetSummary }>(buildApiUrl('/reset'), {
+      method: 'POST',
+    });
   },
 
   getOverview: async (): Promise<DatasetSummary> => {
-    const res = await fetch(`${API_BASE}/overview`);
-    return handleResponse(res);
+    return fetchWithHandling<DatasetSummary>(buildApiUrl('/overview'));
   },
 
   getRawTable: async (params?: { page?: number; pageSize?: number; search?: string; sortBy?: string; sortAsc?: boolean; useRaw?: boolean }): Promise<RawTableResponse> => {
@@ -66,107 +128,91 @@ export const api = {
     if (params?.sortBy) query.append('sort_by', params.sortBy);
     if (params?.sortAsc !== undefined) query.append('sort_asc', params.sortAsc.toString());
     if (params?.useRaw !== undefined) query.append('use_raw', params.useRaw.toString());
-    const res = await fetch(`${API_BASE}/raw-table?${query.toString()}`);
-    return handleResponse(res);
+    return fetchWithHandling<RawTableResponse>(buildApiUrl(`/raw-table?${query.toString()}`));
   },
 
   getInspection: async (): Promise<InspectionResponse> => {
-    const res = await fetch(`${API_BASE}/inspection`);
-    return handleResponse(res);
+    return fetchWithHandling<InspectionResponse>(buildApiUrl('/inspection'));
   },
 
   getMissingAnalysis: async (): Promise<MissingAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/missing`);
-    return handleResponse(res);
+    return fetchWithHandling<MissingAnalysisResponse>(buildApiUrl('/missing'));
   },
 
   treatMissing: async (column: string, strategy: string, fillValue?: string | number): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/missing/treat`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/missing/treat'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ column, strategy, fill_value: fillValue }),
     });
-    return handleResponse(res);
   },
 
   getDuplicatesAnalysis: async (): Promise<DuplicateAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/duplicates`);
-    return handleResponse(res);
+    return fetchWithHandling<DuplicateAnalysisResponse>(buildApiUrl('/duplicates'));
   },
 
   removeDuplicates: async (subset?: string[], keep: string = 'first'): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/duplicates/remove`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/duplicates/remove'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ subset, keep }),
     });
-    return handleResponse(res);
   },
 
   getInconsistencies: async (): Promise<InconsistentAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/inconsistencies`);
-    return handleResponse(res);
+    return fetchWithHandling<InconsistentAnalysisResponse>(buildApiUrl('/inconsistencies'));
   },
 
   treatInconsistencies: async (column: string, action: string, replaceMap?: Record<string, string>): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/inconsistencies/treat`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/inconsistencies/treat'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ column, action, replace_map: replaceMap }),
     });
-    return handleResponse(res);
   },
 
   updateDatatype: async (column: string, targetType: string): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/datatypes/update`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/datatypes/update'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ column, target_type: targetType }),
     });
-    return handleResponse(res);
   },
 
   cleanColumns: async (action: string, column?: string, newName?: string): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/columns/clean`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/columns/clean'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ action, column, new_name: newName }),
     });
-    return handleResponse(res);
   },
 
   getCategoricalAnalysis: async (column: string, useRaw: boolean = false): Promise<CategoricalAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/categorical/${encodeURIComponent(column)}?use_raw=${useRaw}`);
-    return handleResponse(res);
+    return fetchWithHandling<CategoricalAnalysisResponse>(buildApiUrl(`/categorical/${encodeURIComponent(column)}?use_raw=${useRaw}`));
   },
 
   getNumericalAnalysis: async (column: string): Promise<NumericalAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/numerical/${encodeURIComponent(column)}`);
-    return handleResponse(res);
+    return fetchWithHandling<NumericalAnalysisResponse>(buildApiUrl(`/numerical/${encodeURIComponent(column)}`));
   },
 
   getOutlierAnalysis: async (column: string, method: string = 'iqr', threshold: number = 1.5): Promise<OutlierAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/outliers/${encodeURIComponent(column)}?method=${method}&threshold=${threshold}`);
-    return handleResponse(res);
+    return fetchWithHandling<OutlierAnalysisResponse>(buildApiUrl(`/outliers/${encodeURIComponent(column)}?method=${method}&threshold=${threshold}`));
   },
 
   treatOutliers: async (column: string, method: string = 'iqr', action: string = 'clip', threshold: number = 1.5): Promise<{ success: boolean; explanation: any; overview: DatasetSummary }> => {
-    const res = await fetch(`${API_BASE}/outliers/treat`, {
+    return fetchWithHandling<{ success: boolean; explanation: any; overview: DatasetSummary }>(buildApiUrl('/outliers/treat'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ column, method, action, threshold }),
     });
-    return handleResponse(res);
   },
 
   getCorrelation: async (method: string = 'pearson'): Promise<CorrelationResponse> => {
-    const res = await fetch(`${API_BASE}/correlation?method=${method}`);
-    return handleResponse(res);
+    return fetchWithHandling<CorrelationResponse>(buildApiUrl(`/correlation?method=${method}`));
   },
 
   getTargetAnalysis: async (targetCol: string, problemType: string = 'classification'): Promise<TargetAnalysisResponse> => {
-    const res = await fetch(`${API_BASE}/target-analysis?target_col=${encodeURIComponent(targetCol)}&problem_type=${problemType}`);
-    return handleResponse(res);
+    return fetchWithHandling<TargetAnalysisResponse>(buildApiUrl(`/target-analysis?target_col=${encodeURIComponent(targetCol)}&problem_type=${problemType}`));
   },
 
   trainModels: async (payload: {
@@ -179,33 +225,28 @@ export const api = {
     encoding_method?: string;
     random_state?: number;
   }): Promise<MLTrainResponse> => {
-    const res = await fetch(`${API_BASE}/ml/train`, {
+    return fetchWithHandling<MLTrainResponse>(buildApiUrl('/ml/train'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
-    return handleResponse(res);
   },
 
   getCandidateModels: async (problemType: string = 'classification') => {
-    const res = await fetch(`${API_BASE}/ml/candidate-models?problem_type=${problemType}`);
-    return handleResponse(res);
+    return fetchWithHandling<any>(buildApiUrl(`/ml/candidate-models?problem_type=${problemType}`));
   },
 
   getInsights: async (): Promise<InsightItem[]> => {
-    const res = await fetch(`${API_BASE}/insights`);
-    return handleResponse(res);
+    return fetchWithHandling<InsightItem[]>(buildApiUrl('/insights'));
   },
 
   getBeforeAfter: async (): Promise<BeforeAfterResponse> => {
-    const res = await fetch(`${API_BASE}/before-after`);
-    return handleResponse(res);
+    return fetchWithHandling<BeforeAfterResponse>(buildApiUrl('/before-after'));
   },
 
   getPresentationSlides: async (): Promise<PresentationSlide[]> => {
-    const res = await fetch(`${API_BASE}/presentation-slides`);
-    return handleResponse(res);
+    return fetchWithHandling<PresentationSlide[]>(buildApiUrl('/presentation-slides'));
   },
 
-  getExportCleanCsvUrl: () => `${API_BASE}/export/clean-csv`,
+  getExportCleanCsvUrl: () => buildApiUrl('/export/clean-csv'),
 };

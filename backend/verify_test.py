@@ -7,7 +7,10 @@ print("==================================================")
 print("RUNNING AUTOMATED VERIFICATION SUITE")
 print("==================================================")
 
-print("0. Initializing clean demo dataset...")
+print("0. Initializing clean demo dataset & checking health endpoint...")
+r_health = requests.get("http://127.0.0.1:8000/health")
+assert r_health.status_code == 200 and r_health.json() == {"status": "ok"}, f"Health check failed: {r_health.text}"
+print("   [PASS] GET /health returned {'status': 'ok'}")
 requests.post(f"{BASE}/demo/load")
 
 print("1. Testing GET /overview on initial demo dataset...")
