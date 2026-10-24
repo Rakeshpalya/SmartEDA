@@ -182,11 +182,20 @@ Validates zero-missing guard, strategy validation, gender canonicalization, ML t
 
 ---
 
-## 🌐 Production Deployment
+## 🌐 Production Deployment & Live Links
 
-Refer to [`DEPLOYMENT.md`](./DEPLOYMENT.md) for detailed instructions:
-1. **Frontend (Netlify):** Connect GitHub repo `https://github.com/Rakeshpalya/SmartEDA.git`, build command `npm run build`, publish directory `dist`, base directory `frontend`. Set `VITE_API_BASE_URL` to the public FastAPI URL.
-2. **Backend (Render / Railway / Fly.io):** Deploy `backend` directory using Python runtime, `pip install -r requirements.txt`, and start command `uvicorn app.main:app --host 0.0.0.0 --port 10000`. Configure `CORS_ORIGINS`.
+- **Live Frontend (GitHub Pages):** [https://rakeshpalya.github.io/SmartEDA/](https://rakeshpalya.github.io/SmartEDA/)
+- **Live Frontend (Netlify Alternative):** [https://smarteda.netlify.app](https://smarteda.netlify.app)
+- **GitHub Actions Workflows:** [https://github.com/Rakeshpalya/SmartEDA/actions](https://github.com/Rakeshpalya/SmartEDA/actions)
+
+### Deployment Architecture:
+1. **Frontend (GitHub Actions & GitHub Pages):**
+   - Automatically builds via `.github/workflows/deploy.yml` on every push to `main`.
+   - Built with Vite relative asset paths (`base: './'`).
+   - Enable via **Repository Settings &rarr; Pages &rarr; Source: GitHub Actions**.
+2. **Backend (Render / Railway / AWS):**
+   - Deploy `backend` directory using Python runtime, `pip install -r requirements.txt`, and start command `uvicorn app.main:app --host 0.0.0.0 --port 10000`.
+   - Set environment variable `CORS_ORIGINS=https://rakeshpalya.github.io,https://smarteda.netlify.app`.
 
 ---
 
