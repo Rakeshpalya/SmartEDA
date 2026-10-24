@@ -44,21 +44,23 @@ export const BackendErrorCard: React.FC<BackendErrorCardProps> = ({
         </div>
       )}
 
-      {/* API Endpoint Indicator */}
-      <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-500 font-mono">
-        <Server className="w-3.5 h-3.5 text-purple-600 shrink-0" />
-        <span>Configured API Base:</span>
-        <code className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold truncate max-w-xs">
-          {API_BASE_URL}
-        </code>
+      {/* API Endpoint Indicator & Override */}
+      <div className="pt-2 flex flex-col items-center gap-2 max-w-md mx-auto">
+        <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-mono">
+          <Server className="w-3.5 h-3.5 text-purple-600 shrink-0" />
+          <span>Configured API Base:</span>
+          <code className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold truncate max-w-xs">
+            {API_BASE_URL}
+          </code>
+        </div>
       </div>
 
       {/* Retry Action */}
-      <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+      <div className="pt-1 flex flex-col sm:flex-row items-center justify-center gap-3">
         <button
           onClick={onRetry}
           disabled={isRetrying}
-          className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-sm transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+          className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-sm transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
         >
           <RefreshCw className={`w-3.5 h-3.5 ${isRetrying ? 'animate-spin' : ''}`} />
           {isRetrying ? 'Connecting to Backend...' : 'Retry Connection'}
@@ -70,7 +72,7 @@ export const BackendErrorCard: React.FC<BackendErrorCardProps> = ({
         <p className="font-semibold text-slate-700 dark:text-slate-300">Troubleshooting:</p>
         <ul className="list-disc list-inside space-y-0.5 text-slate-500">
           <li><strong>Local development:</strong> Ensure FastAPI is running on <code>http://127.0.0.1:8000</code>.</li>
-          <li><strong>Netlify production:</strong> In Netlify Site Settings &rarr; Environment variables, set <code>VITE_API_BASE_URL</code> to your public backend URL (e.g. Render/Railway).</li>
+          <li><strong>GitHub Pages / Netlify:</strong> Set <code>VITE_API_BASE_URL</code> to your public backend URL (e.g. Render / Railway).</li>
         </ul>
       </div>
     </div>

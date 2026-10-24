@@ -9,17 +9,23 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS configuration supporting development and configurable production domains (e.g. Netlify)
+# CORS configuration supporting development and configurable production domains (e.g. Netlify, GitHub Pages)
 cors_env = os.getenv("CORS_ORIGINS", "").strip()
 if cors_env:
     allowed_origins = [orig.strip() for orig in cors_env.split(",") if orig.strip()]
-    for standard in ["https://smarteda.netlify.app", "http://localhost:5173", "http://127.0.0.1:5173"]:
+    for standard in [
+        "https://smarteda.netlify.app",
+        "https://rakeshpalya.github.io",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173"
+    ]:
         if standard not in allowed_origins:
             allowed_origins.append(standard)
 else:
-    # Development defaults + production Netlify + permissive fallback
+    # Development defaults + production GitHub Pages / Netlify + permissive fallback
     allowed_origins = [
         "https://smarteda.netlify.app",
+        "https://rakeshpalya.github.io",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://localhost:3000",

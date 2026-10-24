@@ -5,9 +5,22 @@ import {
   TargetAnalysisResponse, MLTrainResponse, InsightItem,
   PresentationSlide, BeforeAfterResponse
 } from '../types';
+export const getApiBaseUrl = (): string => {
+  if (typeof window !== 'undefined') {
+    const saved = localStorage.getItem('smarteda_api_url');
+    if (saved && saved.trim()) return saved.trim();
+  }
+  return import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+};
 
-export const API_BASE_URL: string =
-  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+export let API_BASE_URL: string = getApiBaseUrl();
+
+export const setApiBaseUrl = (url: string) => {
+  API_BASE_URL = url.trim();
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('smarteda_api_url', url.trim());
+  }
+};
 
 // Normalize base URL to ensure clean path joining
 const cleanBaseUrl = (baseUrl: string): string => {
@@ -16,7 +29,7 @@ const cleanBaseUrl = (baseUrl: string): string => {
 
 // Builds full API route URL, guaranteeing '/api' prefix without duplicate slashes
 export const buildApiUrl = (endpoint: string): string => {
-  const base = cleanBaseUrl(API_BASE_URL);
+  const base = cleanBaseUrl(getApiBaseUrl());
   const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
 
   if (base.endsWith('/api')) {
@@ -28,6 +41,7 @@ export const buildApiUrl = (endpoint: string): string => {
     ? `${base}${cleanEndpoint}`
     : `${base}/api${cleanEndpoint}`;
 };
+
 
 async function fetchWithHandling<T>(url: string, options: RequestInit = {}, timeoutMs = 15000): Promise<T> {
   const controller = new AbortController();
