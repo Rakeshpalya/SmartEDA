@@ -10,7 +10,7 @@ export const getApiBaseUrl = (): string => {
     const saved = localStorage.getItem('smarteda_api_url');
     if (saved && saved.trim()) return saved.trim();
   }
-  return import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+  return import.meta.env.VITE_API_BASE_URL || "https://smarteda-2.onrender.com";
 };
 
 export let API_BASE_URL: string = getApiBaseUrl();

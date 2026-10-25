@@ -106,11 +106,11 @@ export const BackendErrorCard: React.FC<BackendErrorCardProps> = ({
           <span className="font-semibold text-slate-600 dark:text-slate-400">Quick Presets:</span>
           <button
             type="button"
-            onClick={() => handleSaveAndConnect('https://smarteda-rakesh.loca.lt')}
+            onClick={() => handleSaveAndConnect('https://smarteda-2.onrender.com')}
             className="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-[10px] font-bold hover:bg-emerald-200 transition cursor-pointer flex items-center gap-1"
           >
             <Globe className="w-3 h-3" />
-            HTTPS Tunnel (Live)
+            Render Cloud Backend (Live)
           </button>
           <button
             type="button"
